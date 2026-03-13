@@ -6,6 +6,7 @@ import { WordsModule } from './words/words.module';
 import { UserWordsModule } from './user-words/user-words.module';
 import { ProgressModule } from './progress/progress.module';
 import { SeedModule } from './seed/seed.module';
+import { StoriesModule } from './stories/stories.module';
 
 @Module({
   imports: [
@@ -16,6 +17,7 @@ import { SeedModule } from './seed/seed.module';
     UserWordsModule,
     ProgressModule,
     SeedModule,
+    StoriesModule,
   ],
 })
 export class AppModule {}

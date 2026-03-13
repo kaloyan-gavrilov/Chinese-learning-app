@@ -1,0 +1,6410 @@
+[
+  {
+    "id": "my-home",
+    "title": "我的家",
+    "titlePinyin": "Wǒ de Jiā",
+    "description": "A young student named Xiao Ming introduces his family and their daily life at home.",
+    "hsk_level": 1,
+    "tags": [
+      "short",
+      "family",
+      "daily-life"
+    ],
+    "chapters": [
+      {
+        "id": "family-members",
+        "title": "家人",
+        "titlePinyin": "Jiārén — Family Members",
+        "sentences": [
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I / me"
+              },
+              {
+                "hanzi": "叫",
+                "pinyin": "jiào",
+                "meaning": "am called"
+              },
+              {
+                "hanzi": "小明",
+                "pinyin": "Xiǎo Míng",
+                "meaning": "Xiao Ming (a name)"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "My name is Xiao Ming."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "my"
+              },
+              {
+                "hanzi": "家",
+                "pinyin": "jiā",
+                "meaning": "family / home"
+              },
+              {
+                "hanzi": "有",
+                "pinyin": "yǒu",
+                "meaning": "have"
+              },
+              {
+                "hanzi": "四",
+                "pinyin": "sì",
+                "meaning": "four"
+              },
+              {
+                "hanzi": "个",
+                "pinyin": "gè",
+                "meaning": "(measure word for people)"
+              },
+              {
+                "hanzi": "人",
+                "pinyin": "rén",
+                "meaning": "person / people"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "My family has four people."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "爸爸",
+                "pinyin": "bàba",
+                "meaning": "dad / father"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "meaning": "is / am / are"
+              },
+              {
+                "hanzi": "医生",
+                "pinyin": "yīshēng",
+                "meaning": "doctor"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Dad is a doctor."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "妈妈",
+                "pinyin": "māma",
+                "meaning": "mom / mother"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "漂亮",
+                "pinyin": "piàoliang",
+                "meaning": "beautiful"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Mom is very beautiful."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I / me"
+              },
+              {
+                "hanzi": "有",
+                "pinyin": "yǒu",
+                "meaning": "have"
+              },
+              {
+                "hanzi": "一",
+                "pinyin": "yī",
+                "meaning": "one"
+              },
+              {
+                "hanzi": "只",
+                "pinyin": "zhī",
+                "meaning": "(measure word for animals)"
+              },
+              {
+                "hanzi": "猫",
+                "pinyin": "māo",
+                "meaning": "cat"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "I have a cat."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "my"
+              },
+              {
+                "hanzi": "的",
+                "pinyin": "de",
+                "meaning": "'s (possessive particle)"
+              },
+              {
+                "hanzi": "猫",
+                "pinyin": "māo",
+                "meaning": "cat"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "小",
+                "pinyin": "xiǎo",
+                "meaning": "small / little"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "My cat is very small."
+          }
+        ]
+      },
+      {
+        "id": "at-home",
+        "title": "在家",
+        "titlePinyin": "Zài Jiā — At Home",
+        "sentences": [
+          {
+            "words": [
+              {
+                "hanzi": "我们",
+                "pinyin": "wǒmen",
+                "meaning": "we / us"
+              },
+              {
+                "hanzi": "在",
+                "pinyin": "zài",
+                "meaning": "at / in"
+              },
+              {
+                "hanzi": "家",
+                "pinyin": "jiā",
+                "meaning": "home"
+              },
+              {
+                "hanzi": "吃",
+                "pinyin": "chī",
+                "meaning": "eat"
+              },
+              {
+                "hanzi": "饭",
+                "pinyin": "fàn",
+                "meaning": "meal / food"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "We eat at home."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "妈妈",
+                "pinyin": "māma",
+                "meaning": "mom"
+              },
+              {
+                "hanzi": "做",
+                "pinyin": "zuò",
+                "meaning": "make / cook"
+              },
+              {
+                "hanzi": "的",
+                "pinyin": "de",
+                "meaning": "'s (possessive particle)"
+              },
+              {
+                "hanzi": "饭",
+                "pinyin": "fàn",
+                "meaning": "food / meal"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "好吃",
+                "pinyin": "hǎochī",
+                "meaning": "delicious"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "The food mom cooks is very delicious."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "爸爸",
+                "pinyin": "bàba",
+                "meaning": "dad"
+              },
+              {
+                "hanzi": "看",
+                "pinyin": "kàn",
+                "meaning": "watch / look"
+              },
+              {
+                "hanzi": "电视",
+                "pinyin": "diànshì",
+                "meaning": "television / TV"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Dad watches TV."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "看",
+                "pinyin": "kàn",
+                "meaning": "read / look at"
+              },
+              {
+                "hanzi": "书",
+                "pinyin": "shū",
+                "meaning": "book"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "学习",
+                "pinyin": "xuéxí",
+                "meaning": "study / learn"
+              },
+              {
+                "hanzi": "汉语",
+                "pinyin": "Hànyǔ",
+                "meaning": "Chinese language"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "I read books and study Chinese."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我们",
+                "pinyin": "wǒmen",
+                "meaning": "we / us"
+              },
+              {
+                "hanzi": "都",
+                "pinyin": "dōu",
+                "meaning": "all / both"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "高兴",
+                "pinyin": "gāoxìng",
+                "meaning": "happy / pleased"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "We are all very happy."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "at-the-restaurant",
+    "title": "在饭店",
+    "titlePinyin": "Zài Fàndiàn",
+    "description": "Xiao Ming and his friend Xiao Hong go out for lunch and enjoy a delicious meal together.",
+    "hsk_level": 1,
+    "tags": [
+      "food",
+      "daily-life",
+      "dialogue"
+    ],
+    "chapters": [
+      {
+        "id": "going-there",
+        "title": "中午",
+        "titlePinyin": "Zhōngwǔ — Noon",
+        "sentences": [
+          {
+            "words": [
+              {
+                "hanzi": "今天",
+                "pinyin": "jīntiān",
+                "meaning": "today"
+              },
+              {
+                "hanzi": "中午",
+                "pinyin": "zhōngwǔ",
+                "meaning": "noon / midday"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "想",
+                "pinyin": "xiǎng",
+                "meaning": "want"
+              },
+              {
+                "hanzi": "吃",
+                "pinyin": "chī",
+                "meaning": "eat"
+              },
+              {
+                "hanzi": "饭",
+                "pinyin": "fàn",
+                "meaning": "food / a meal"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Today at noon I really want to eat."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "打电话",
+                "pinyin": "dǎ diànhuà",
+                "meaning": "make a phone call"
+              },
+              {
+                "hanzi": "叫",
+                "pinyin": "jiào",
+                "meaning": "ask / call"
+              },
+              {
+                "hanzi": "朋友",
+                "pinyin": "péngyou",
+                "meaning": "friend"
+              },
+              {
+                "hanzi": "小红",
+                "pinyin": "Xiǎo Hóng",
+                "meaning": "Xiao Hong (a name)"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "I make a phone call to ask my friend Xiao Hong."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "小红",
+                "pinyin": "Xiǎo Hóng",
+                "meaning": "Xiao Hong"
+              },
+              {
+                "hanzi": "说",
+                "pinyin": "shuō",
+                "meaning": "say"
+              },
+              {
+                "hanzi": "好",
+                "pinyin": "hǎo",
+                "meaning": "OK / good"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "我们",
+                "pinyin": "wǒmen",
+                "meaning": "we / let's"
+              },
+              {
+                "hanzi": "去",
+                "pinyin": "qù",
+                "meaning": "go to"
+              },
+              {
+                "hanzi": "饭店",
+                "pinyin": "fàndiàn",
+                "meaning": "restaurant"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Xiao Hong says OK, let's go to the restaurant."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "饭店",
+                "pinyin": "fàndiàn",
+                "meaning": "restaurant"
+              },
+              {
+                "hanzi": "在",
+                "pinyin": "zài",
+                "meaning": "is at"
+              },
+              {
+                "hanzi": "学校",
+                "pinyin": "xuéxiào",
+                "meaning": "school"
+              },
+              {
+                "hanzi": "前面",
+                "pinyin": "qiánmiàn",
+                "meaning": "in front of"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "The restaurant is in front of the school."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "饭店",
+                "pinyin": "fàndiàn",
+                "meaning": "restaurant"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "大",
+                "pinyin": "dà",
+                "meaning": "big"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "里",
+                "pinyin": "lǐ",
+                "meaning": "inside"
+              },
+              {
+                "hanzi": "有",
+                "pinyin": "yǒu",
+                "meaning": "there are"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "多",
+                "pinyin": "duō",
+                "meaning": "many"
+              },
+              {
+                "hanzi": "人",
+                "pinyin": "rén",
+                "meaning": "people"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "The restaurant is very big and there are many people inside."
+          }
+        ]
+      },
+      {
+        "id": "ordering",
+        "title": "点菜",
+        "titlePinyin": "Diǎn Cài — Ordering Food",
+        "sentences": [
+          {
+            "words": [
+              {
+                "hanzi": "我们",
+                "pinyin": "wǒmen",
+                "meaning": "we"
+              },
+              {
+                "hanzi": "坐",
+                "pinyin": "zuò",
+                "meaning": "sit"
+              },
+              {
+                "hanzi": "在",
+                "pinyin": "zài",
+                "meaning": "on"
+              },
+              {
+                "hanzi": "椅子",
+                "pinyin": "yǐzi",
+                "meaning": "chair"
+              },
+              {
+                "hanzi": "上",
+                "pinyin": "shàng",
+                "meaning": "on (top)"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "We sit on the chairs."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "这",
+                "pinyin": "zhè",
+                "meaning": "this"
+              },
+              {
+                "hanzi": "里",
+                "pinyin": "lǐ",
+                "meaning": "here"
+              },
+              {
+                "hanzi": "有",
+                "pinyin": "yǒu",
+                "meaning": "there are"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "多",
+                "pinyin": "duō",
+                "meaning": "many"
+              },
+              {
+                "hanzi": "菜",
+                "pinyin": "cài",
+                "meaning": "dishes / food"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "There are many dishes here."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "想",
+                "pinyin": "xiǎng",
+                "meaning": "want"
+              },
+              {
+                "hanzi": "吃",
+                "pinyin": "chī",
+                "meaning": "eat"
+              },
+              {
+                "hanzi": "米饭",
+                "pinyin": "mǐfàn",
+                "meaning": "rice"
+              },
+              {
+                "hanzi": "和",
+                "pinyin": "hé",
+                "meaning": "and"
+              },
+              {
+                "hanzi": "一些",
+                "pinyin": "yīxiē",
+                "meaning": "some"
+              },
+              {
+                "hanzi": "菜",
+                "pinyin": "cài",
+                "meaning": "dishes"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "I want to eat rice and some dishes."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "小红",
+                "pinyin": "Xiǎo Hóng",
+                "meaning": "Xiao Hong"
+              },
+              {
+                "hanzi": "想",
+                "pinyin": "xiǎng",
+                "meaning": "wants"
+              },
+              {
+                "hanzi": "喝",
+                "pinyin": "hē",
+                "meaning": "drink"
+              },
+              {
+                "hanzi": "茶",
+                "pinyin": "chá",
+                "meaning": "tea"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "不",
+                "pinyin": "bù",
+                "meaning": "not"
+              },
+              {
+                "hanzi": "喝",
+                "pinyin": "hē",
+                "meaning": "drink"
+              },
+              {
+                "hanzi": "水",
+                "pinyin": "shuǐ",
+                "meaning": "water"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Xiao Hong wants to drink tea, not water."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "喝",
+                "pinyin": "hē",
+                "meaning": "drink"
+              },
+              {
+                "hanzi": "水",
+                "pinyin": "shuǐ",
+                "meaning": "water"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "也",
+                "pinyin": "yě",
+                "meaning": "also"
+              },
+              {
+                "hanzi": "喝",
+                "pinyin": "hē",
+                "meaning": "drink"
+              },
+              {
+                "hanzi": "茶",
+                "pinyin": "chá",
+                "meaning": "tea"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "I drink water and also tea."
+          }
+        ]
+      },
+      {
+        "id": "eating",
+        "title": "吃饭",
+        "titlePinyin": "Chī Fàn — Eating",
+        "sentences": [
+          {
+            "words": [
+              {
+                "hanzi": "菜",
+                "pinyin": "cài",
+                "meaning": "the food"
+              },
+              {
+                "hanzi": "来",
+                "pinyin": "lái",
+                "meaning": "came / arrived"
+              },
+              {
+                "hanzi": "了",
+                "pinyin": "le",
+                "meaning": "(completion particle)"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "好吃",
+                "pinyin": "hǎochī",
+                "meaning": "delicious"
+              },
+              {
+                "hanzi": "！",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "The food arrived — so delicious!"
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我们",
+                "pinyin": "wǒmen",
+                "meaning": "we"
+              },
+              {
+                "hanzi": "吃",
+                "pinyin": "chī",
+                "meaning": "eat"
+              },
+              {
+                "hanzi": "米饭",
+                "pinyin": "mǐfàn",
+                "meaning": "rice"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "喝",
+                "pinyin": "hē",
+                "meaning": "drink"
+              },
+              {
+                "hanzi": "茶",
+                "pinyin": "chá",
+                "meaning": "tea"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "高兴",
+                "pinyin": "gāoxìng",
+                "meaning": "happy"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "We eat rice, drink tea, and are very happy."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "这",
+                "pinyin": "zhè",
+                "meaning": "this"
+              },
+              {
+                "hanzi": "里",
+                "pinyin": "lǐ",
+                "meaning": "here"
+              },
+              {
+                "hanzi": "的",
+                "pinyin": "de",
+                "meaning": "'s (possessive)"
+              },
+              {
+                "hanzi": "水果",
+                "pinyin": "shuǐguǒ",
+                "meaning": "fruit"
+              },
+              {
+                "hanzi": "也",
+                "pinyin": "yě",
+                "meaning": "also"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "好吃",
+                "pinyin": "hǎochī",
+                "meaning": "delicious"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "The fruit here is also very delicious."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "这些",
+                "pinyin": "zhèxiē",
+                "meaning": "these"
+              },
+              {
+                "hanzi": "东西",
+                "pinyin": "dōngxi",
+                "meaning": "things"
+              },
+              {
+                "hanzi": "多少",
+                "pinyin": "duōshao",
+                "meaning": "how much"
+              },
+              {
+                "hanzi": "钱",
+                "pinyin": "qián",
+                "meaning": "money"
+              },
+              {
+                "hanzi": "？",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "How much do all these things cost?"
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我们",
+                "pinyin": "wǒmen",
+                "meaning": "we"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "高兴",
+                "pinyin": "gāoxìng",
+                "meaning": "happy"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "说",
+                "pinyin": "shuō",
+                "meaning": "say"
+              },
+              {
+                "hanzi": "再见",
+                "pinyin": "zàijiàn",
+                "meaning": "goodbye"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "We are very happy and say goodbye."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "shopping-day",
+    "title": "买东西",
+    "titlePinyin": "Mǎi Dōngxi",
+    "description": "Xiao Ming's mother takes him shopping for new clothes and fruit at the market.",
+    "hsk_level": 1,
+    "tags": [
+      "shopping",
+      "family",
+      "daily-life"
+    ],
+    "chapters": [
+      {
+        "id": "going-shopping",
+        "title": "去商店",
+        "titlePinyin": "Qù Shāngdiàn — Going to the Shop",
+        "sentences": [
+          {
+            "words": [
+              {
+                "hanzi": "今天",
+                "pinyin": "jīntiān",
+                "meaning": "today"
+              },
+              {
+                "hanzi": "妈妈",
+                "pinyin": "māma",
+                "meaning": "mom"
+              },
+              {
+                "hanzi": "想",
+                "pinyin": "xiǎng",
+                "meaning": "wants"
+              },
+              {
+                "hanzi": "去",
+                "pinyin": "qù",
+                "meaning": "go to"
+              },
+              {
+                "hanzi": "商店",
+                "pinyin": "shāngdiàn",
+                "meaning": "shop / store"
+              },
+              {
+                "hanzi": "买",
+                "pinyin": "mǎi",
+                "meaning": "buy"
+              },
+              {
+                "hanzi": "东西",
+                "pinyin": "dōngxi",
+                "meaning": "things"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Today mom wants to go to the shop to buy things."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "她",
+                "pinyin": "tā",
+                "meaning": "she"
+              },
+              {
+                "hanzi": "叫",
+                "pinyin": "jiào",
+                "meaning": "calls / asks"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "me"
+              },
+              {
+                "hanzi": "一",
+                "pinyin": "yī",
+                "meaning": "together (lit. one)"
+              },
+              {
+                "hanzi": "起",
+                "pinyin": "qǐ",
+                "meaning": "together"
+              },
+              {
+                "hanzi": "去",
+                "pinyin": "qù",
+                "meaning": "go"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "She asks me to come along."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "商店",
+                "pinyin": "shāngdiàn",
+                "meaning": "shop"
+              },
+              {
+                "hanzi": "不",
+                "pinyin": "bù",
+                "meaning": "not"
+              },
+              {
+                "hanzi": "在",
+                "pinyin": "zài",
+                "meaning": "is at"
+              },
+              {
+                "hanzi": "家",
+                "pinyin": "jiā",
+                "meaning": "home"
+              },
+              {
+                "hanzi": "后面",
+                "pinyin": "hòumiàn",
+                "meaning": "behind"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "在",
+                "pinyin": "zài",
+                "meaning": "is at"
+              },
+              {
+                "hanzi": "前面",
+                "pinyin": "qiánmiàn",
+                "meaning": "in front"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "The shop is not behind our home — it is in front."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我们",
+                "pinyin": "wǒmen",
+                "meaning": "we"
+              },
+              {
+                "hanzi": "坐",
+                "pinyin": "zuò",
+                "meaning": "take / ride"
+              },
+              {
+                "hanzi": "出租车",
+                "pinyin": "chūzūchē",
+                "meaning": "taxi"
+              },
+              {
+                "hanzi": "去",
+                "pinyin": "qù",
+                "meaning": "go"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "We take a taxi to go there."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "商店",
+                "pinyin": "shāngdiàn",
+                "meaning": "shop"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "大",
+                "pinyin": "dà",
+                "meaning": "big"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "里",
+                "pinyin": "lǐ",
+                "meaning": "inside"
+              },
+              {
+                "hanzi": "有",
+                "pinyin": "yǒu",
+                "meaning": "has"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "多",
+                "pinyin": "duō",
+                "meaning": "many"
+              },
+              {
+                "hanzi": "东西",
+                "pinyin": "dōngxi",
+                "meaning": "things"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "The shop is very big and has many things inside."
+          }
+        ]
+      },
+      {
+        "id": "buying-clothes",
+        "title": "买衣服",
+        "titlePinyin": "Mǎi Yīfu — Buying Clothes",
+        "sentences": [
+          {
+            "words": [
+              {
+                "hanzi": "妈妈",
+                "pinyin": "māma",
+                "meaning": "mom"
+              },
+              {
+                "hanzi": "看",
+                "pinyin": "kàn",
+                "meaning": "looks at"
+              },
+              {
+                "hanzi": "一些",
+                "pinyin": "yīxiē",
+                "meaning": "some"
+              },
+              {
+                "hanzi": "衣服",
+                "pinyin": "yīfu",
+                "meaning": "clothes"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Mom looks at some clothes."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "那",
+                "pinyin": "nà",
+                "meaning": "that"
+              },
+              {
+                "hanzi": "件",
+                "pinyin": "jiàn",
+                "meaning": "(measure word for clothing)"
+              },
+              {
+                "hanzi": "衣服",
+                "pinyin": "yīfu",
+                "meaning": "clothing"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "漂亮",
+                "pinyin": "piàoliang",
+                "meaning": "beautiful"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "That piece of clothing is very beautiful."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "这",
+                "pinyin": "zhè",
+                "meaning": "this"
+              },
+              {
+                "hanzi": "件",
+                "pinyin": "jiàn",
+                "meaning": "(measure word for clothing)"
+              },
+              {
+                "hanzi": "衣服",
+                "pinyin": "yīfu",
+                "meaning": "clothing"
+              },
+              {
+                "hanzi": "多少",
+                "pinyin": "duōshao",
+                "meaning": "how much"
+              },
+              {
+                "hanzi": "钱",
+                "pinyin": "qián",
+                "meaning": "money"
+              },
+              {
+                "hanzi": "？",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "How much does this piece of clothing cost?"
+          },
+          {
+            "words": [
+              {
+                "hanzi": "一",
+                "pinyin": "yī",
+                "meaning": "one"
+              },
+              {
+                "hanzi": "百",
+                "pinyin": "bǎi",
+                "meaning": "hundred"
+              },
+              {
+                "hanzi": "块",
+                "pinyin": "kuài",
+                "meaning": "yuan"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "One hundred yuan."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "妈妈",
+                "pinyin": "māma",
+                "meaning": "mom"
+              },
+              {
+                "hanzi": "买",
+                "pinyin": "mǎi",
+                "meaning": "buys"
+              },
+              {
+                "hanzi": "了",
+                "pinyin": "le",
+                "meaning": "(completion particle)"
+              },
+              {
+                "hanzi": "那",
+                "pinyin": "nà",
+                "meaning": "that"
+              },
+              {
+                "hanzi": "件",
+                "pinyin": "jiàn",
+                "meaning": "(measure word for clothing)"
+              },
+              {
+                "hanzi": "衣服",
+                "pinyin": "yīfu",
+                "meaning": "clothing"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Mom bought that piece of clothing."
+          }
+        ]
+      },
+      {
+        "id": "buying-fruit",
+        "title": "买水果",
+        "titlePinyin": "Mǎi Shuǐguǒ — Buying Fruit",
+        "sentences": [
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "看见",
+                "pinyin": "kànjiàn",
+                "meaning": "see"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "多",
+                "pinyin": "duō",
+                "meaning": "many"
+              },
+              {
+                "hanzi": "水果",
+                "pinyin": "shuǐguǒ",
+                "meaning": "fruit"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "I see a lot of fruit."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "有",
+                "pinyin": "yǒu",
+                "meaning": "there are"
+              },
+              {
+                "hanzi": "苹果",
+                "pinyin": "píngguǒ",
+                "meaning": "apples"
+              },
+              {
+                "hanzi": "和",
+                "pinyin": "hé",
+                "meaning": "and"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "many"
+              },
+              {
+                "hanzi": "多",
+                "pinyin": "duō",
+                "meaning": "many"
+              },
+              {
+                "hanzi": "别的",
+                "pinyin": "biéde",
+                "meaning": "other kinds"
+              },
+              {
+                "hanzi": "水果",
+                "pinyin": "shuǐguǒ",
+                "meaning": "fruit"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "There are apples and many other kinds of fruit."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "喜欢",
+                "pinyin": "xǐhuan",
+                "meaning": "like"
+              },
+              {
+                "hanzi": "吃",
+                "pinyin": "chī",
+                "meaning": "eat"
+              },
+              {
+                "hanzi": "苹果",
+                "pinyin": "píngguǒ",
+                "meaning": "apples"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "I like eating apples."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "妈妈",
+                "pinyin": "māma",
+                "meaning": "mom"
+              },
+              {
+                "hanzi": "买",
+                "pinyin": "mǎi",
+                "meaning": "buys"
+              },
+              {
+                "hanzi": "了",
+                "pinyin": "le",
+                "meaning": "(completion particle)"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "many"
+              },
+              {
+                "hanzi": "多",
+                "pinyin": "duō",
+                "meaning": "many"
+              },
+              {
+                "hanzi": "苹果",
+                "pinyin": "píngguǒ",
+                "meaning": "apples"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Mom bought a lot of apples."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我们",
+                "pinyin": "wǒmen",
+                "meaning": "we"
+              },
+              {
+                "hanzi": "回",
+                "pinyin": "huí",
+                "meaning": "return / go back"
+              },
+              {
+                "hanzi": "家",
+                "pinyin": "jiā",
+                "meaning": "home"
+              },
+              {
+                "hanzi": "了",
+                "pinyin": "le",
+                "meaning": "(completion particle)"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "高兴",
+                "pinyin": "gāoxìng",
+                "meaning": "happy"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "We went home, very happy."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "my-day",
+    "title": "我的一天",
+    "titlePinyin": "Wǒ de Yītiān",
+    "description": "Follow Xiao Ming through a full day — from waking up in the morning to going to bed at night.",
+    "hsk_level": 1,
+    "tags": [
+      "daily-life",
+      "routine",
+      "time"
+    ],
+    "chapters": [
+      {
+        "id": "morning",
+        "title": "早上",
+        "titlePinyin": "Zǎoshang — Morning",
+        "sentences": [
+          {
+            "words": [
+              {
+                "hanzi": "早上",
+                "pinyin": "zǎoshang",
+                "meaning": "morning"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "七",
+                "pinyin": "qī",
+                "meaning": "seven"
+              },
+              {
+                "hanzi": "点",
+                "pinyin": "diǎn",
+                "meaning": "o'clock"
+              },
+              {
+                "hanzi": "起来",
+                "pinyin": "qǐlái",
+                "meaning": "get up"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "In the morning I get up at seven o'clock."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "妈妈",
+                "pinyin": "māma",
+                "meaning": "mom"
+              },
+              {
+                "hanzi": "做",
+                "pinyin": "zuò",
+                "meaning": "makes / cooks"
+              },
+              {
+                "hanzi": "早",
+                "pinyin": "zǎo",
+                "meaning": "morning (early)"
+              },
+              {
+                "hanzi": "饭",
+                "pinyin": "fàn",
+                "meaning": "meal"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Mom makes breakfast."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "喝",
+                "pinyin": "hē",
+                "meaning": "drink"
+              },
+              {
+                "hanzi": "水",
+                "pinyin": "shuǐ",
+                "meaning": "water"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "吃",
+                "pinyin": "chī",
+                "meaning": "eat"
+              },
+              {
+                "hanzi": "苹果",
+                "pinyin": "píngguǒ",
+                "meaning": "apple"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "I drink water and eat an apple."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "爸爸",
+                "pinyin": "bàba",
+                "meaning": "dad"
+              },
+              {
+                "hanzi": "去",
+                "pinyin": "qù",
+                "meaning": "goes to"
+              },
+              {
+                "hanzi": "工作",
+                "pinyin": "gōngzuò",
+                "meaning": "work"
+              },
+              {
+                "hanzi": "了",
+                "pinyin": "le",
+                "meaning": "(completion particle)"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Dad has gone to work."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "也",
+                "pinyin": "yě",
+                "meaning": "also"
+              },
+              {
+                "hanzi": "去",
+                "pinyin": "qù",
+                "meaning": "go to"
+              },
+              {
+                "hanzi": "学校",
+                "pinyin": "xuéxiào",
+                "meaning": "school"
+              },
+              {
+                "hanzi": "了",
+                "pinyin": "le",
+                "meaning": "(completion particle)"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "I also go to school."
+          }
+        ]
+      },
+      {
+        "id": "at-school-day",
+        "title": "在学校",
+        "titlePinyin": "Zài Xuéxiào — At School",
+        "sentences": [
+          {
+            "words": [
+              {
+                "hanzi": "上午",
+                "pinyin": "shàngwǔ",
+                "meaning": "morning (9–12)"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "学习",
+                "pinyin": "xuéxí",
+                "meaning": "study"
+              },
+              {
+                "hanzi": "汉语",
+                "pinyin": "Hànyǔ",
+                "meaning": "Chinese language"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "In the morning I study Chinese."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "老师",
+                "pinyin": "lǎoshī",
+                "meaning": "teacher"
+              },
+              {
+                "hanzi": "说",
+                "pinyin": "shuō",
+                "meaning": "speaks / says"
+              },
+              {
+                "hanzi": "汉语",
+                "pinyin": "Hànyǔ",
+                "meaning": "Chinese"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "听",
+                "pinyin": "tīng",
+                "meaning": "listen"
+              },
+              {
+                "hanzi": "和",
+                "pinyin": "hé",
+                "meaning": "and"
+              },
+              {
+                "hanzi": "写",
+                "pinyin": "xiě",
+                "meaning": "write"
+              },
+              {
+                "hanzi": "字",
+                "pinyin": "zì",
+                "meaning": "characters"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "The teacher speaks Chinese; I listen and write characters."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "中午",
+                "pinyin": "zhōngwǔ",
+                "meaning": "noon"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "和",
+                "pinyin": "hé",
+                "meaning": "and"
+              },
+              {
+                "hanzi": "同学",
+                "pinyin": "tóngxué",
+                "meaning": "classmates"
+              },
+              {
+                "hanzi": "吃",
+                "pinyin": "chī",
+                "meaning": "eat"
+              },
+              {
+                "hanzi": "饭",
+                "pinyin": "fàn",
+                "meaning": "lunch"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "At noon I eat lunch with my classmates."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "下午",
+                "pinyin": "xiàwǔ",
+                "meaning": "afternoon"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "读",
+                "pinyin": "dú",
+                "meaning": "read"
+              },
+              {
+                "hanzi": "书",
+                "pinyin": "shū",
+                "meaning": "books"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "写",
+                "pinyin": "xiě",
+                "meaning": "write"
+              },
+              {
+                "hanzi": "字",
+                "pinyin": "zì",
+                "meaning": "characters"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "In the afternoon I read books and write characters."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "喜欢",
+                "pinyin": "xǐhuan",
+                "meaning": "like"
+              },
+              {
+                "hanzi": "学习",
+                "pinyin": "xuéxí",
+                "meaning": "study / learning"
+              },
+              {
+                "hanzi": "汉语",
+                "pinyin": "Hànyǔ",
+                "meaning": "Chinese"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "I like studying Chinese very much."
+          }
+        ]
+      },
+      {
+        "id": "evening",
+        "title": "晚上",
+        "titlePinyin": "Wǎnshang — Evening",
+        "sentences": [
+          {
+            "words": [
+              {
+                "hanzi": "下午",
+                "pinyin": "xiàwǔ",
+                "meaning": "afternoon"
+              },
+              {
+                "hanzi": "五",
+                "pinyin": "wǔ",
+                "meaning": "five"
+              },
+              {
+                "hanzi": "点",
+                "pinyin": "diǎn",
+                "meaning": "o'clock"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "回",
+                "pinyin": "huí",
+                "meaning": "return"
+              },
+              {
+                "hanzi": "家",
+                "pinyin": "jiā",
+                "meaning": "home"
+              },
+              {
+                "hanzi": "了",
+                "pinyin": "le",
+                "meaning": "(completion particle)"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "At five in the afternoon, I returned home."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我们",
+                "pinyin": "wǒmen",
+                "meaning": "we"
+              },
+              {
+                "hanzi": "在",
+                "pinyin": "zài",
+                "meaning": "at"
+              },
+              {
+                "hanzi": "家",
+                "pinyin": "jiā",
+                "meaning": "home"
+              },
+              {
+                "hanzi": "吃",
+                "pinyin": "chī",
+                "meaning": "eat"
+              },
+              {
+                "hanzi": "晚",
+                "pinyin": "wǎn",
+                "meaning": "evening"
+              },
+              {
+                "hanzi": "饭",
+                "pinyin": "fàn",
+                "meaning": "meal"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "We eat dinner at home."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "妈妈",
+                "pinyin": "māma",
+                "meaning": "mom"
+              },
+              {
+                "hanzi": "做",
+                "pinyin": "zuò",
+                "meaning": "cooks / makes"
+              },
+              {
+                "hanzi": "的",
+                "pinyin": "de",
+                "meaning": "'s (possessive)"
+              },
+              {
+                "hanzi": "饭",
+                "pinyin": "fàn",
+                "meaning": "meal"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "好吃",
+                "pinyin": "hǎochī",
+                "meaning": "delicious"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "The meal mom cooks is very delicious."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "爸爸",
+                "pinyin": "bàba",
+                "meaning": "dad"
+              },
+              {
+                "hanzi": "看",
+                "pinyin": "kàn",
+                "meaning": "watches"
+              },
+              {
+                "hanzi": "电视",
+                "pinyin": "diànshì",
+                "meaning": "TV"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "看",
+                "pinyin": "kàn",
+                "meaning": "read"
+              },
+              {
+                "hanzi": "书",
+                "pinyin": "shū",
+                "meaning": "books"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Dad watches TV; I read books."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "九",
+                "pinyin": "jiǔ",
+                "meaning": "nine"
+              },
+              {
+                "hanzi": "点",
+                "pinyin": "diǎn",
+                "meaning": "o'clock"
+              },
+              {
+                "hanzi": "睡觉",
+                "pinyin": "shuìjiào",
+                "meaning": "go to sleep"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "I go to sleep at nine o'clock."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "birthday-party",
+    "title": "过生日",
+    "titlePinyin": "Guò Shēngrì",
+    "description": "Today is Xiao Ming's birthday. Friends come to celebrate and everyone has a wonderful time.",
+    "hsk_level": 1,
+    "tags": [
+      "birthday",
+      "family",
+      "celebration"
+    ],
+    "chapters": [
+      {
+        "id": "birthday-morning",
+        "title": "生日早上",
+        "titlePinyin": "Shēngrì Zǎoshang — Birthday Morning",
+        "sentences": [
+          {
+            "words": [
+              {
+                "hanzi": "今天",
+                "pinyin": "jīntiān",
+                "meaning": "today"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "meaning": "is"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "my"
+              },
+              {
+                "hanzi": "的",
+                "pinyin": "de",
+                "meaning": "'s (possessive)"
+              },
+              {
+                "hanzi": "生日",
+                "pinyin": "shēngrì",
+                "meaning": "birthday"
+              },
+              {
+                "hanzi": "！",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Today is my birthday!"
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "今年",
+                "pinyin": "jīnnián",
+                "meaning": "this year"
+              },
+              {
+                "hanzi": "八",
+                "pinyin": "bā",
+                "meaning": "eight"
+              },
+              {
+                "hanzi": "岁",
+                "pinyin": "suì",
+                "meaning": "years old"
+              },
+              {
+                "hanzi": "了",
+                "pinyin": "le",
+                "meaning": "(change of state particle)"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "I am eight years old this year."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "爸爸",
+                "pinyin": "bàba",
+                "meaning": "dad"
+              },
+              {
+                "hanzi": "和",
+                "pinyin": "hé",
+                "meaning": "and"
+              },
+              {
+                "hanzi": "妈妈",
+                "pinyin": "māma",
+                "meaning": "mom"
+              },
+              {
+                "hanzi": "说",
+                "pinyin": "shuō",
+                "meaning": "say"
+              },
+              {
+                "hanzi": "：",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "生日",
+                "pinyin": "shēngrì",
+                "meaning": "birthday"
+              },
+              {
+                "hanzi": "快乐",
+                "pinyin": "kuàilè",
+                "meaning": "happy"
+              },
+              {
+                "hanzi": "！",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Dad and mom say: Happy birthday!"
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "高兴",
+                "pinyin": "gāoxìng",
+                "meaning": "happy"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "I am very happy."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "今天",
+                "pinyin": "jīntiān",
+                "meaning": "today"
+              },
+              {
+                "hanzi": "朋友",
+                "pinyin": "péngyou",
+                "meaning": "friends"
+              },
+              {
+                "hanzi": "来",
+                "pinyin": "lái",
+                "meaning": "come"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "my"
+              },
+              {
+                "hanzi": "家",
+                "pinyin": "jiā",
+                "meaning": "home"
+              },
+              {
+                "hanzi": "！",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Today friends are coming to my home!"
+          }
+        ]
+      },
+      {
+        "id": "friends-arrive",
+        "title": "朋友来了",
+        "titlePinyin": "Péngyou Lái Le — Friends Arrive",
+        "sentences": [
+          {
+            "words": [
+              {
+                "hanzi": "下午",
+                "pinyin": "xiàwǔ",
+                "meaning": "afternoon"
+              },
+              {
+                "hanzi": "三",
+                "pinyin": "sān",
+                "meaning": "three"
+              },
+              {
+                "hanzi": "点",
+                "pinyin": "diǎn",
+                "meaning": "o'clock"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "朋友们",
+                "pinyin": "péngyoumen",
+                "meaning": "friends"
+              },
+              {
+                "hanzi": "来",
+                "pinyin": "lái",
+                "meaning": "came"
+              },
+              {
+                "hanzi": "了",
+                "pinyin": "le",
+                "meaning": "(completion particle)"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "At three in the afternoon, my friends came."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "他们",
+                "pinyin": "tāmen",
+                "meaning": "they / them"
+              },
+              {
+                "hanzi": "带来",
+                "pinyin": "dài lái",
+                "meaning": "brought"
+              },
+              {
+                "hanzi": "了",
+                "pinyin": "le",
+                "meaning": "(completion particle)"
+              },
+              {
+                "hanzi": "很多",
+                "pinyin": "hěn duō",
+                "meaning": "many / a lot of"
+              },
+              {
+                "hanzi": "东西",
+                "pinyin": "dōngxi",
+                "meaning": "things"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "They brought many things."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我们",
+                "pinyin": "wǒmen",
+                "meaning": "we"
+              },
+              {
+                "hanzi": "吃",
+                "pinyin": "chī",
+                "meaning": "eat"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "多",
+                "pinyin": "duō",
+                "meaning": "many"
+              },
+              {
+                "hanzi": "好吃",
+                "pinyin": "hǎochī",
+                "meaning": "delicious"
+              },
+              {
+                "hanzi": "的",
+                "pinyin": "de",
+                "meaning": "(adjective particle)"
+              },
+              {
+                "hanzi": "东西",
+                "pinyin": "dōngxi",
+                "meaning": "things"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "We eat a lot of delicious things."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "有",
+                "pinyin": "yǒu",
+                "meaning": "there are"
+              },
+              {
+                "hanzi": "水果",
+                "pinyin": "shuǐguǒ",
+                "meaning": "fruit"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "有",
+                "pinyin": "yǒu",
+                "meaning": "there are"
+              },
+              {
+                "hanzi": "苹果",
+                "pinyin": "píngguǒ",
+                "meaning": "apples"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "好吃",
+                "pinyin": "hǎochī",
+                "meaning": "delicious"
+              },
+              {
+                "hanzi": "极了",
+                "pinyin": "jíle",
+                "meaning": "extremely"
+              },
+              {
+                "hanzi": "！",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "There are fruits and apples — extremely delicious!"
+          },
+          {
+            "words": [
+              {
+                "hanzi": "大家",
+                "pinyin": "dàjiā",
+                "meaning": "everyone"
+              },
+              {
+                "hanzi": "都",
+                "pinyin": "dōu",
+                "meaning": "all"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "高兴",
+                "pinyin": "gāoxìng",
+                "meaning": "happy"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Everyone is very happy."
+          }
+        ]
+      },
+      {
+        "id": "birthday-wish",
+        "title": "生日愿望",
+        "titlePinyin": "Shēngrì Yuànwàng — Birthday Wish",
+        "sentences": [
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "想",
+                "pinyin": "xiǎng",
+                "meaning": "wish / want"
+              },
+              {
+                "hanzi": "明年",
+                "pinyin": "míngnián",
+                "meaning": "next year"
+              },
+              {
+                "hanzi": "去",
+                "pinyin": "qù",
+                "meaning": "go to"
+              },
+              {
+                "hanzi": "中国",
+                "pinyin": "Zhōngguó",
+                "meaning": "China"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "I wish to go to China next year."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "想",
+                "pinyin": "xiǎng",
+                "meaning": "want"
+              },
+              {
+                "hanzi": "学",
+                "pinyin": "xué",
+                "meaning": "learn / study"
+              },
+              {
+                "hanzi": "很多",
+                "pinyin": "hěn duō",
+                "meaning": "a lot of"
+              },
+              {
+                "hanzi": "汉语",
+                "pinyin": "Hànyǔ",
+                "meaning": "Chinese"
+              },
+              {
+                "hanzi": "字",
+                "pinyin": "zì",
+                "meaning": "characters"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "I want to learn many Chinese characters."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "朋友们",
+                "pinyin": "péngyoumen",
+                "meaning": "friends"
+              },
+              {
+                "hanzi": "说",
+                "pinyin": "shuō",
+                "meaning": "say"
+              },
+              {
+                "hanzi": "：",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "我们",
+                "pinyin": "wǒmen",
+                "meaning": "we"
+              },
+              {
+                "hanzi": "也",
+                "pinyin": "yě",
+                "meaning": "also"
+              },
+              {
+                "hanzi": "想",
+                "pinyin": "xiǎng",
+                "meaning": "want"
+              },
+              {
+                "hanzi": "去",
+                "pinyin": "qù",
+                "meaning": "go to"
+              },
+              {
+                "hanzi": "！",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Friends say: we also want to go!"
+          },
+          {
+            "words": [
+              {
+                "hanzi": "今天",
+                "pinyin": "jīntiān",
+                "meaning": "today"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "meaning": "is"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "好",
+                "pinyin": "hǎo",
+                "meaning": "good"
+              },
+              {
+                "hanzi": "的",
+                "pinyin": "de",
+                "meaning": "(adjective particle)"
+              },
+              {
+                "hanzi": "一天",
+                "pinyin": "yītiān",
+                "meaning": "one day / a day"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Today is a very good day."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "谢谢",
+                "pinyin": "xièxie",
+                "meaning": "thank you"
+              },
+              {
+                "hanzi": "朋友们",
+                "pinyin": "péngyoumen",
+                "meaning": "friends"
+              },
+              {
+                "hanzi": "！",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Thank you, friends!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "weekend-trip",
+    "title": "周末旅游",
+    "titlePinyin": "Zhōumò Lǚyóu",
+    "description": "Li Hua and her husband plan a weekend trip to Beijing and experience the excitement of travelling.",
+    "hsk_level": 2,
+    "tags": [
+      "travel",
+      "city",
+      "dialogue"
+    ],
+    "chapters": [
+      {
+        "id": "planning",
+        "title": "准备旅行",
+        "titlePinyin": "Zhǔnbèi Lǚxíng — Planning the Trip",
+        "sentences": [
+          {
+            "words": [
+              {
+                "hanzi": "这",
+                "pinyin": "zhè",
+                "meaning": "this"
+              },
+              {
+                "hanzi": "个",
+                "pinyin": "gè",
+                "meaning": "(measure word)"
+              },
+              {
+                "hanzi": "周末",
+                "pinyin": "zhōumò",
+                "meaning": "weekend"
+              },
+              {
+                "hanzi": "我们",
+                "pinyin": "wǒmen",
+                "meaning": "we"
+              },
+              {
+                "hanzi": "去",
+                "pinyin": "qù",
+                "meaning": "go to"
+              },
+              {
+                "hanzi": "北京",
+                "pinyin": "Běijīng",
+                "meaning": "Beijing"
+              },
+              {
+                "hanzi": "旅游",
+                "pinyin": "lǚyóu",
+                "meaning": "travel / tourism"
+              },
+              {
+                "hanzi": "吧",
+                "pinyin": "ba",
+                "meaning": "(suggestion particle)"
+              },
+              {
+                "hanzi": "！",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Let's travel to Beijing this weekend!"
+          },
+          {
+            "words": [
+              {
+                "hanzi": "丈夫",
+                "pinyin": "zhàngfu",
+                "meaning": "husband"
+              },
+              {
+                "hanzi": "说",
+                "pinyin": "shuō",
+                "meaning": "says"
+              },
+              {
+                "hanzi": "：",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "好",
+                "pinyin": "hǎo",
+                "meaning": "great"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "已经",
+                "pinyin": "yǐjīng",
+                "meaning": "already"
+              },
+              {
+                "hanzi": "准备",
+                "pinyin": "zhǔnbèi",
+                "meaning": "prepared"
+              },
+              {
+                "hanzi": "好",
+                "pinyin": "hǎo",
+                "meaning": "ready"
+              },
+              {
+                "hanzi": "了",
+                "pinyin": "le",
+                "meaning": "(completion particle)"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Husband says: Great, I'm already ready."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我们",
+                "pinyin": "wǒmen",
+                "meaning": "we"
+              },
+              {
+                "hanzi": "坐",
+                "pinyin": "zuò",
+                "meaning": "take / ride"
+              },
+              {
+                "hanzi": "飞机",
+                "pinyin": "fēijī",
+                "meaning": "airplane"
+              },
+              {
+                "hanzi": "去",
+                "pinyin": "qù",
+                "meaning": "go"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "因为",
+                "pinyin": "yīnwèi",
+                "meaning": "because"
+              },
+              {
+                "hanzi": "飞机",
+                "pinyin": "fēijī",
+                "meaning": "airplane"
+              },
+              {
+                "hanzi": "比",
+                "pinyin": "bǐ",
+                "meaning": "than"
+              },
+              {
+                "hanzi": "火车",
+                "pinyin": "huǒchē",
+                "meaning": "train"
+              },
+              {
+                "hanzi": "快",
+                "pinyin": "kuài",
+                "meaning": "fast"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "We take the plane because it is faster than the train."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "在",
+                "pinyin": "zài",
+                "meaning": "in"
+              },
+              {
+                "hanzi": "网上",
+                "pinyin": "wǎngshang",
+                "meaning": "online"
+              },
+              {
+                "hanzi": "买",
+                "pinyin": "mǎi",
+                "meaning": "buy"
+              },
+              {
+                "hanzi": "了",
+                "pinyin": "le",
+                "meaning": "(completion particle)"
+              },
+              {
+                "hanzi": "两",
+                "pinyin": "liǎng",
+                "meaning": "two"
+              },
+              {
+                "hanzi": "张",
+                "pinyin": "zhāng",
+                "meaning": "(measure word for tickets)"
+              },
+              {
+                "hanzi": "票",
+                "pinyin": "piào",
+                "meaning": "tickets"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "I bought two tickets online."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我们",
+                "pinyin": "wǒmen",
+                "meaning": "we"
+              },
+              {
+                "hanzi": "非常",
+                "pinyin": "fēicháng",
+                "meaning": "very / extremely"
+              },
+              {
+                "hanzi": "高兴",
+                "pinyin": "gāoxìng",
+                "meaning": "happy / excited"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "We are extremely happy."
+          }
+        ]
+      },
+      {
+        "id": "at-airport",
+        "title": "在机场",
+        "titlePinyin": "Zài Jīchǎng — At the Airport",
+        "sentences": [
+          {
+            "words": [
+              {
+                "hanzi": "早上",
+                "pinyin": "zǎoshang",
+                "meaning": "morning"
+              },
+              {
+                "hanzi": "六",
+                "pinyin": "liù",
+                "meaning": "six"
+              },
+              {
+                "hanzi": "点",
+                "pinyin": "diǎn",
+                "meaning": "o'clock"
+              },
+              {
+                "hanzi": "我们",
+                "pinyin": "wǒmen",
+                "meaning": "we"
+              },
+              {
+                "hanzi": "到",
+                "pinyin": "dào",
+                "meaning": "arrive at"
+              },
+              {
+                "hanzi": "了",
+                "pinyin": "le",
+                "meaning": "(completion particle)"
+              },
+              {
+                "hanzi": "机场",
+                "pinyin": "jīchǎng",
+                "meaning": "airport"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "At six in the morning we arrived at the airport."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "机场",
+                "pinyin": "jīchǎng",
+                "meaning": "airport"
+              },
+              {
+                "hanzi": "里",
+                "pinyin": "lǐ",
+                "meaning": "inside"
+              },
+              {
+                "hanzi": "有",
+                "pinyin": "yǒu",
+                "meaning": "there are"
+              },
+              {
+                "hanzi": "很多",
+                "pinyin": "hěn duō",
+                "meaning": "many"
+              },
+              {
+                "hanzi": "人",
+                "pinyin": "rén",
+                "meaning": "people"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "There are many people inside the airport."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我们",
+                "pinyin": "wǒmen",
+                "meaning": "we"
+              },
+              {
+                "hanzi": "先",
+                "pinyin": "xiān",
+                "meaning": "first"
+              },
+              {
+                "hanzi": "找",
+                "pinyin": "zhǎo",
+                "meaning": "find / look for"
+              },
+              {
+                "hanzi": "我们",
+                "pinyin": "wǒmen",
+                "meaning": "our"
+              },
+              {
+                "hanzi": "的",
+                "pinyin": "de",
+                "meaning": "'s (possessive)"
+              },
+              {
+                "hanzi": "登机口",
+                "pinyin": "dēngjīkǒu",
+                "meaning": "boarding gate"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "We first look for our boarding gate."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "飞机",
+                "pinyin": "fēijī",
+                "meaning": "plane"
+              },
+              {
+                "hanzi": "九",
+                "pinyin": "jiǔ",
+                "meaning": "nine"
+              },
+              {
+                "hanzi": "点",
+                "pinyin": "diǎn",
+                "meaning": "o'clock"
+              },
+              {
+                "hanzi": "开始",
+                "pinyin": "kāishǐ",
+                "meaning": "start / depart"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "我们",
+                "pinyin": "wǒmen",
+                "meaning": "we"
+              },
+              {
+                "hanzi": "不",
+                "pinyin": "bù",
+                "meaning": "not"
+              },
+              {
+                "hanzi": "能",
+                "pinyin": "néng",
+                "meaning": "can / must not"
+              },
+              {
+                "hanzi": "迟到",
+                "pinyin": "chídào",
+                "meaning": "be late"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "The plane departs at nine — we must not be late."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我们",
+                "pinyin": "wǒmen",
+                "meaning": "we"
+              },
+              {
+                "hanzi": "坐",
+                "pinyin": "zuò",
+                "meaning": "sit / board"
+              },
+              {
+                "hanzi": "上",
+                "pinyin": "shàng",
+                "meaning": "onto"
+              },
+              {
+                "hanzi": "了",
+                "pinyin": "le",
+                "meaning": "(completion particle)"
+              },
+              {
+                "hanzi": "飞机",
+                "pinyin": "fēijī",
+                "meaning": "the plane"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "非常",
+                "pinyin": "fēicháng",
+                "meaning": "extremely"
+              },
+              {
+                "hanzi": "高兴",
+                "pinyin": "gāoxìng",
+                "meaning": "happy / excited"
+              },
+              {
+                "hanzi": "！",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "We boarded the plane, extremely excited!"
+          }
+        ]
+      },
+      {
+        "id": "in-beijing",
+        "title": "到了北京",
+        "titlePinyin": "Dào Le Běijīng — Arriving in Beijing",
+        "sentences": [
+          {
+            "words": [
+              {
+                "hanzi": "我们",
+                "pinyin": "wǒmen",
+                "meaning": "we"
+              },
+              {
+                "hanzi": "到",
+                "pinyin": "dào",
+                "meaning": "arrive"
+              },
+              {
+                "hanzi": "了",
+                "pinyin": "le",
+                "meaning": "(completion particle)"
+              },
+              {
+                "hanzi": "北京",
+                "pinyin": "Běijīng",
+                "meaning": "Beijing"
+              },
+              {
+                "hanzi": "！",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "We arrived in Beijing!"
+          },
+          {
+            "words": [
+              {
+                "hanzi": "北京",
+                "pinyin": "Běijīng",
+                "meaning": "Beijing"
+              },
+              {
+                "hanzi": "比",
+                "pinyin": "bǐ",
+                "meaning": "than"
+              },
+              {
+                "hanzi": "我们",
+                "pinyin": "wǒmen",
+                "meaning": "our"
+              },
+              {
+                "hanzi": "住",
+                "pinyin": "zhù",
+                "meaning": "live (in)"
+              },
+              {
+                "hanzi": "的",
+                "pinyin": "de",
+                "meaning": "(possessive particle)"
+              },
+              {
+                "hanzi": "地方",
+                "pinyin": "dìfāng",
+                "meaning": "place"
+              },
+              {
+                "hanzi": "大",
+                "pinyin": "dà",
+                "meaning": "bigger"
+              },
+              {
+                "hanzi": "多了",
+                "pinyin": "duōle",
+                "meaning": "much more"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Beijing is much bigger than the place we live."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我们",
+                "pinyin": "wǒmen",
+                "meaning": "we"
+              },
+              {
+                "hanzi": "住",
+                "pinyin": "zhù",
+                "meaning": "stay at"
+              },
+              {
+                "hanzi": "在",
+                "pinyin": "zài",
+                "meaning": "at"
+              },
+              {
+                "hanzi": "一",
+                "pinyin": "yī",
+                "meaning": "a / one"
+              },
+              {
+                "hanzi": "个",
+                "pinyin": "gè",
+                "meaning": "(measure word)"
+              },
+              {
+                "hanzi": "宾馆",
+                "pinyin": "bīnguǎn",
+                "meaning": "hotel"
+              },
+              {
+                "hanzi": "里",
+                "pinyin": "lǐ",
+                "meaning": "inside"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "We stay at a hotel."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "房间",
+                "pinyin": "fángjiān",
+                "meaning": "room"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "大",
+                "pinyin": "dà",
+                "meaning": "big"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "也",
+                "pinyin": "yě",
+                "meaning": "also"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "好看",
+                "pinyin": "hǎokàn",
+                "meaning": "nice-looking"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "The room is very big and also very nice."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "明天",
+                "pinyin": "míngtiān",
+                "meaning": "tomorrow"
+              },
+              {
+                "hanzi": "我们",
+                "pinyin": "wǒmen",
+                "meaning": "we"
+              },
+              {
+                "hanzi": "要",
+                "pinyin": "yào",
+                "meaning": "will / plan to"
+              },
+              {
+                "hanzi": "去",
+                "pinyin": "qù",
+                "meaning": "go to"
+              },
+              {
+                "hanzi": "参观",
+                "pinyin": "cānguān",
+                "meaning": "visit / tour"
+              },
+              {
+                "hanzi": "很多",
+                "pinyin": "hěn duō",
+                "meaning": "many"
+              },
+              {
+                "hanzi": "地方",
+                "pinyin": "dìfāng",
+                "meaning": "places"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Tomorrow we plan to visit many places."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "at-the-company",
+    "title": "在公司",
+    "titlePinyin": "Zài Gōngsī",
+    "description": "Wang Fang describes a typical busy workday at her company, from commute to after-work plans.",
+    "hsk_level": 2,
+    "tags": [
+      "work",
+      "daily-life",
+      "city"
+    ],
+    "chapters": [
+      {
+        "id": "morning-commute",
+        "title": "上班路上",
+        "titlePinyin": "Shàngbān Lùshang — On the Way to Work",
+        "sentences": [
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "每天",
+                "pinyin": "měitiān",
+                "meaning": "every day"
+              },
+              {
+                "hanzi": "早上",
+                "pinyin": "zǎoshang",
+                "meaning": "morning"
+              },
+              {
+                "hanzi": "七",
+                "pinyin": "qī",
+                "meaning": "seven"
+              },
+              {
+                "hanzi": "点",
+                "pinyin": "diǎn",
+                "meaning": "o'clock"
+              },
+              {
+                "hanzi": "起床",
+                "pinyin": "qǐchuáng",
+                "meaning": "get up"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Every day I get up at seven o'clock in the morning."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "先",
+                "pinyin": "xiān",
+                "meaning": "first"
+              },
+              {
+                "hanzi": "洗",
+                "pinyin": "xǐ",
+                "meaning": "wash"
+              },
+              {
+                "hanzi": "脸",
+                "pinyin": "liǎn",
+                "meaning": "face"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "然后",
+                "pinyin": "ránhòu",
+                "meaning": "then / afterwards"
+              },
+              {
+                "hanzi": "吃",
+                "pinyin": "chī",
+                "meaning": "eat"
+              },
+              {
+                "hanzi": "早饭",
+                "pinyin": "zǎofàn",
+                "meaning": "breakfast"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "First I wash my face, then eat breakfast."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "公司",
+                "pinyin": "gōngsī",
+                "meaning": "company"
+              },
+              {
+                "hanzi": "离",
+                "pinyin": "lí",
+                "meaning": "away from"
+              },
+              {
+                "hanzi": "我家",
+                "pinyin": "wǒjiā",
+                "meaning": "my home"
+              },
+              {
+                "hanzi": "不",
+                "pinyin": "bù",
+                "meaning": "not"
+              },
+              {
+                "hanzi": "远",
+                "pinyin": "yuǎn",
+                "meaning": "far"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "近",
+                "pinyin": "jìn",
+                "meaning": "near"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "The company is not far from my home — it is very near."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "骑",
+                "pinyin": "qí",
+                "meaning": "ride"
+              },
+              {
+                "hanzi": "自行车",
+                "pinyin": "zìxíngchē",
+                "meaning": "bicycle"
+              },
+              {
+                "hanzi": "去",
+                "pinyin": "qù",
+                "meaning": "go"
+              },
+              {
+                "hanzi": "上班",
+                "pinyin": "shàngbān",
+                "meaning": "go to work"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "I ride my bicycle to work."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "骑",
+                "pinyin": "qí",
+                "meaning": "riding"
+              },
+              {
+                "hanzi": "自行车",
+                "pinyin": "zìxíngchē",
+                "meaning": "bicycle"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "快",
+                "pinyin": "kuài",
+                "meaning": "fast"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "只",
+                "pinyin": "zhǐ",
+                "meaning": "only"
+              },
+              {
+                "hanzi": "要",
+                "pinyin": "yào",
+                "meaning": "takes / needs"
+              },
+              {
+                "hanzi": "十",
+                "pinyin": "shí",
+                "meaning": "ten"
+              },
+              {
+                "hanzi": "分钟",
+                "pinyin": "fēnzhōng",
+                "meaning": "minutes"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Riding a bicycle is very fast — it only takes ten minutes."
+          }
+        ]
+      },
+      {
+        "id": "busy-at-work",
+        "title": "工作很忙",
+        "titlePinyin": "Gōngzuò Hěn Máng — Very Busy at Work",
+        "sentences": [
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "在",
+                "pinyin": "zài",
+                "meaning": "at"
+              },
+              {
+                "hanzi": "一",
+                "pinyin": "yī",
+                "meaning": "a / one"
+              },
+              {
+                "hanzi": "家",
+                "pinyin": "jiā",
+                "meaning": "(measure word for companies)"
+              },
+              {
+                "hanzi": "大",
+                "pinyin": "dà",
+                "meaning": "big"
+              },
+              {
+                "hanzi": "公司",
+                "pinyin": "gōngsī",
+                "meaning": "company"
+              },
+              {
+                "hanzi": "工作",
+                "pinyin": "gōngzuò",
+                "meaning": "work"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "I work at a big company."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "今天",
+                "pinyin": "jīntiān",
+                "meaning": "today"
+              },
+              {
+                "hanzi": "工作",
+                "pinyin": "gōngzuò",
+                "meaning": "work"
+              },
+              {
+                "hanzi": "非常",
+                "pinyin": "fēicháng",
+                "meaning": "extremely"
+              },
+              {
+                "hanzi": "忙",
+                "pinyin": "máng",
+                "meaning": "busy"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Today work is extremely busy."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "有",
+                "pinyin": "yǒu",
+                "meaning": "have"
+              },
+              {
+                "hanzi": "很多",
+                "pinyin": "hěn duō",
+                "meaning": "many"
+              },
+              {
+                "hanzi": "问题",
+                "pinyin": "wèntí",
+                "meaning": "problems / questions"
+              },
+              {
+                "hanzi": "要",
+                "pinyin": "yào",
+                "meaning": "need to"
+              },
+              {
+                "hanzi": "回答",
+                "pinyin": "huídá",
+                "meaning": "answer"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "I have many questions to answer."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "同事",
+                "pinyin": "tóngshì",
+                "meaning": "colleague"
+              },
+              {
+                "hanzi": "告诉",
+                "pinyin": "gàosu",
+                "meaning": "tell"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "me"
+              },
+              {
+                "hanzi": "：",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "如果",
+                "pinyin": "rúguǒ",
+                "meaning": "if"
+              },
+              {
+                "hanzi": "有",
+                "pinyin": "yǒu",
+                "meaning": "there are"
+              },
+              {
+                "hanzi": "问题",
+                "pinyin": "wèntí",
+                "meaning": "problems"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "就",
+                "pinyin": "jiù",
+                "meaning": "then"
+              },
+              {
+                "hanzi": "问",
+                "pinyin": "wèn",
+                "meaning": "ask"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "me"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "My colleague tells me: if there are problems, just ask me."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "虽然",
+                "pinyin": "suīrán",
+                "meaning": "although"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "忙",
+                "pinyin": "máng",
+                "meaning": "busy"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "但是",
+                "pinyin": "dànshì",
+                "meaning": "but"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "觉得",
+                "pinyin": "juéde",
+                "meaning": "feel / think"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "快乐",
+                "pinyin": "kuàilè",
+                "meaning": "happy"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Although very busy, I feel very happy."
+          }
+        ]
+      },
+      {
+        "id": "after-work",
+        "title": "下班以后",
+        "titlePinyin": "Xiàbān Yǐhòu — After Work",
+        "sentences": [
+          {
+            "words": [
+              {
+                "hanzi": "下午",
+                "pinyin": "xiàwǔ",
+                "meaning": "afternoon"
+              },
+              {
+                "hanzi": "六",
+                "pinyin": "liù",
+                "meaning": "six"
+              },
+              {
+                "hanzi": "点",
+                "pinyin": "diǎn",
+                "meaning": "o'clock"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "下班",
+                "pinyin": "xiàbān",
+                "meaning": "finish work"
+              },
+              {
+                "hanzi": "了",
+                "pinyin": "le",
+                "meaning": "(completion particle)"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "At six in the afternoon I finished work."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "累",
+                "pinyin": "lèi",
+                "meaning": "tired"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "想",
+                "pinyin": "xiǎng",
+                "meaning": "want"
+              },
+              {
+                "hanzi": "休息",
+                "pinyin": "xiūxi",
+                "meaning": "rest"
+              },
+              {
+                "hanzi": "一下",
+                "pinyin": "yīxià",
+                "meaning": "for a bit"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "I am very tired and want to rest for a bit."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "朋友",
+                "pinyin": "péngyou",
+                "meaning": "friend"
+              },
+              {
+                "hanzi": "问",
+                "pinyin": "wèn",
+                "meaning": "asks"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "me"
+              },
+              {
+                "hanzi": "：",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "一起",
+                "pinyin": "yīqǐ",
+                "meaning": "together"
+              },
+              {
+                "hanzi": "去",
+                "pinyin": "qù",
+                "meaning": "go"
+              },
+              {
+                "hanzi": "吃",
+                "pinyin": "chī",
+                "meaning": "eat"
+              },
+              {
+                "hanzi": "饭",
+                "pinyin": "fàn",
+                "meaning": "dinner"
+              },
+              {
+                "hanzi": "吗",
+                "pinyin": "ma",
+                "meaning": "?"
+              },
+              {
+                "hanzi": "？",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "A friend asks me: shall we go eat together?"
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "说",
+                "pinyin": "shuō",
+                "meaning": "say"
+              },
+              {
+                "hanzi": "好",
+                "pinyin": "hǎo",
+                "meaning": "OK"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "我们",
+                "pinyin": "wǒmen",
+                "meaning": "we"
+              },
+              {
+                "hanzi": "去",
+                "pinyin": "qù",
+                "meaning": "go to"
+              },
+              {
+                "hanzi": "旁边",
+                "pinyin": "pángbiān",
+                "meaning": "nearby"
+              },
+              {
+                "hanzi": "的",
+                "pinyin": "de",
+                "meaning": "'s / of"
+              },
+              {
+                "hanzi": "饭店",
+                "pinyin": "fàndiàn",
+                "meaning": "restaurant"
+              },
+              {
+                "hanzi": "吃饭",
+                "pinyin": "chīfàn",
+                "meaning": "eat"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "I say OK, let's eat at the nearby restaurant."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我们",
+                "pinyin": "wǒmen",
+                "meaning": "we"
+              },
+              {
+                "hanzi": "一起",
+                "pinyin": "yīqǐ",
+                "meaning": "together"
+              },
+              {
+                "hanzi": "吃饭",
+                "pinyin": "chīfàn",
+                "meaning": "eat"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "说说话",
+                "pinyin": "shuōshuōhuà",
+                "meaning": "chat"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "开心",
+                "pinyin": "kāixīn",
+                "meaning": "happy"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "We eat together, chat, and are very happy."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "my-hobbies",
+    "title": "我的爱好",
+    "titlePinyin": "Wǒ de Àihào",
+    "description": "Chen Lei shares his favourite hobbies — sport, music, and reading — and why they make him happy.",
+    "hsk_level": 2,
+    "tags": [
+      "hobbies",
+      "sport",
+      "music"
+    ],
+    "chapters": [
+      {
+        "id": "sport",
+        "title": "喜欢运动",
+        "titlePinyin": "Xǐhuan Yùndòng — Loving Sport",
+        "sentences": [
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "非常",
+                "pinyin": "fēicháng",
+                "meaning": "very / extremely"
+              },
+              {
+                "hanzi": "喜欢",
+                "pinyin": "xǐhuan",
+                "meaning": "like"
+              },
+              {
+                "hanzi": "运动",
+                "pinyin": "yùndòng",
+                "meaning": "sport / exercise"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "I love sport very much."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "每天",
+                "pinyin": "měitiān",
+                "meaning": "every day"
+              },
+              {
+                "hanzi": "早上",
+                "pinyin": "zǎoshang",
+                "meaning": "morning"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "都",
+                "pinyin": "dōu",
+                "meaning": "all / always"
+              },
+              {
+                "hanzi": "去",
+                "pinyin": "qù",
+                "meaning": "go"
+              },
+              {
+                "hanzi": "跑步",
+                "pinyin": "pǎobù",
+                "meaning": "run"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Every morning I go running."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "跑步",
+                "pinyin": "pǎobù",
+                "meaning": "run"
+              },
+              {
+                "hanzi": "跑",
+                "pinyin": "pǎo",
+                "meaning": "run"
+              },
+              {
+                "hanzi": "了",
+                "pinyin": "le",
+                "meaning": "(completion particle)"
+              },
+              {
+                "hanzi": "半",
+                "pinyin": "bàn",
+                "meaning": "half"
+              },
+              {
+                "hanzi": "个",
+                "pinyin": "gè",
+                "meaning": "(measure word)"
+              },
+              {
+                "hanzi": "小时",
+                "pinyin": "xiǎoshí",
+                "meaning": "hour"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "I ran for half an hour."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "周末",
+                "pinyin": "zhōumò",
+                "meaning": "weekend"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "和",
+                "pinyin": "hé",
+                "meaning": "and"
+              },
+              {
+                "hanzi": "朋友",
+                "pinyin": "péngyou",
+                "meaning": "friends"
+              },
+              {
+                "hanzi": "一起",
+                "pinyin": "yīqǐ",
+                "meaning": "together"
+              },
+              {
+                "hanzi": "踢足球",
+                "pinyin": "tī zúqiú",
+                "meaning": "play soccer"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "On weekends I play soccer together with friends."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "运动",
+                "pinyin": "yùndòng",
+                "meaning": "exercise / sport"
+              },
+              {
+                "hanzi": "对",
+                "pinyin": "duì",
+                "meaning": "is good for"
+              },
+              {
+                "hanzi": "身体",
+                "pinyin": "shēntǐ",
+                "meaning": "body / health"
+              },
+              {
+                "hanzi": "非常",
+                "pinyin": "fēicháng",
+                "meaning": "extremely"
+              },
+              {
+                "hanzi": "好",
+                "pinyin": "hǎo",
+                "meaning": "good"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Exercise is extremely good for the body."
+          }
+        ]
+      },
+      {
+        "id": "music",
+        "title": "音乐和唱歌",
+        "titlePinyin": "Yīnyuè hé Chànggē — Music and Singing",
+        "sentences": [
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "也",
+                "pinyin": "yě",
+                "meaning": "also"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "喜欢",
+                "pinyin": "xǐhuan",
+                "meaning": "like"
+              },
+              {
+                "hanzi": "音乐",
+                "pinyin": "yīnyuè",
+                "meaning": "music"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "I also like music very much."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "每天",
+                "pinyin": "měitiān",
+                "meaning": "every day"
+              },
+              {
+                "hanzi": "听",
+                "pinyin": "tīng",
+                "meaning": "listen to"
+              },
+              {
+                "hanzi": "音乐",
+                "pinyin": "yīnyuè",
+                "meaning": "music"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "有时候",
+                "pinyin": "yǒushíhou",
+                "meaning": "sometimes"
+              },
+              {
+                "hanzi": "也",
+                "pinyin": "yě",
+                "meaning": "also"
+              },
+              {
+                "hanzi": "唱歌",
+                "pinyin": "chànggē",
+                "meaning": "sing"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Every day I listen to music, and sometimes I also sing."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "觉得",
+                "pinyin": "juéde",
+                "meaning": "feel / think"
+              },
+              {
+                "hanzi": "唱歌",
+                "pinyin": "chànggē",
+                "meaning": "singing"
+              },
+              {
+                "hanzi": "让",
+                "pinyin": "ràng",
+                "meaning": "makes / lets"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "me"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "快乐",
+                "pinyin": "kuàilè",
+                "meaning": "happy"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "I feel that singing makes me very happy."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "的",
+                "pinyin": "de",
+                "meaning": "'s (possessive)"
+              },
+              {
+                "hanzi": "姐姐",
+                "pinyin": "jiějie",
+                "meaning": "older sister"
+              },
+              {
+                "hanzi": "也",
+                "pinyin": "yě",
+                "meaning": "also"
+              },
+              {
+                "hanzi": "喜欢",
+                "pinyin": "xǐhuan",
+                "meaning": "likes"
+              },
+              {
+                "hanzi": "唱歌",
+                "pinyin": "chànggē",
+                "meaning": "singing"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "她",
+                "pinyin": "tā",
+                "meaning": "she"
+              },
+              {
+                "hanzi": "唱",
+                "pinyin": "chàng",
+                "meaning": "sings"
+              },
+              {
+                "hanzi": "得",
+                "pinyin": "de",
+                "meaning": "(complement particle)"
+              },
+              {
+                "hanzi": "很好",
+                "pinyin": "hěn hǎo",
+                "meaning": "very well"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "My older sister also likes singing; she sings very well."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我们",
+                "pinyin": "wǒmen",
+                "meaning": "we"
+              },
+              {
+                "hanzi": "一起",
+                "pinyin": "yīqǐ",
+                "meaning": "together"
+              },
+              {
+                "hanzi": "唱歌",
+                "pinyin": "chànggē",
+                "meaning": "sing"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "真",
+                "pinyin": "zhēn",
+                "meaning": "truly / really"
+              },
+              {
+                "hanzi": "的",
+                "pinyin": "de",
+                "meaning": "(emphatic particle)"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "开心",
+                "pinyin": "kāixīn",
+                "meaning": "happy"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Singing together is truly very happy."
+          }
+        ]
+      },
+      {
+        "id": "reading",
+        "title": "看书和写日记",
+        "titlePinyin": "Kàn Shū hé Xiě Rìjì — Reading and Writing a Diary",
+        "sentences": [
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "的",
+                "pinyin": "de",
+                "meaning": "'s (possessive)"
+              },
+              {
+                "hanzi": "另一个",
+                "pinyin": "lìng yīgè",
+                "meaning": "another"
+              },
+              {
+                "hanzi": "爱好",
+                "pinyin": "àihào",
+                "meaning": "hobby"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "meaning": "is"
+              },
+              {
+                "hanzi": "看书",
+                "pinyin": "kànshū",
+                "meaning": "reading books"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "My other hobby is reading books."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "喜欢",
+                "pinyin": "xǐhuan",
+                "meaning": "like"
+              },
+              {
+                "hanzi": "看",
+                "pinyin": "kàn",
+                "meaning": "read"
+              },
+              {
+                "hanzi": "中文",
+                "pinyin": "zhōngwén",
+                "meaning": "Chinese-language"
+              },
+              {
+                "hanzi": "书",
+                "pinyin": "shū",
+                "meaning": "books"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "因为",
+                "pinyin": "yīnwèi",
+                "meaning": "because"
+              },
+              {
+                "hanzi": "可以",
+                "pinyin": "kěyǐ",
+                "meaning": "can"
+              },
+              {
+                "hanzi": "学",
+                "pinyin": "xué",
+                "meaning": "learn"
+              },
+              {
+                "hanzi": "很多",
+                "pinyin": "hěn duō",
+                "meaning": "a lot"
+              },
+              {
+                "hanzi": "新",
+                "pinyin": "xīn",
+                "meaning": "new"
+              },
+              {
+                "hanzi": "字",
+                "pinyin": "zì",
+                "meaning": "characters"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "I like reading Chinese books because I can learn many new characters."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "每天",
+                "pinyin": "měitiān",
+                "meaning": "every day"
+              },
+              {
+                "hanzi": "晚上",
+                "pinyin": "wǎnshang",
+                "meaning": "evening"
+              },
+              {
+                "hanzi": "写",
+                "pinyin": "xiě",
+                "meaning": "write"
+              },
+              {
+                "hanzi": "日记",
+                "pinyin": "rìjì",
+                "meaning": "diary"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Every evening I write in my diary."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "把",
+                "pinyin": "bǎ",
+                "meaning": "(disposal marker)"
+              },
+              {
+                "hanzi": "今天",
+                "pinyin": "jīntiān",
+                "meaning": "today's"
+              },
+              {
+                "hanzi": "的",
+                "pinyin": "de",
+                "meaning": "'s (possessive)"
+              },
+              {
+                "hanzi": "事",
+                "pinyin": "shì",
+                "meaning": "events / things"
+              },
+              {
+                "hanzi": "写",
+                "pinyin": "xiě",
+                "meaning": "write"
+              },
+              {
+                "hanzi": "下来",
+                "pinyin": "xiàlái",
+                "meaning": "down"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "I write down the events of today."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "希望",
+                "pinyin": "xīwàng",
+                "meaning": "I hope"
+              },
+              {
+                "hanzi": "以后",
+                "pinyin": "yǐhòu",
+                "meaning": "in the future"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "的",
+                "pinyin": "de",
+                "meaning": "'s (possessive)"
+              },
+              {
+                "hanzi": "中文",
+                "pinyin": "zhōngwén",
+                "meaning": "Chinese"
+              },
+              {
+                "hanzi": "越来越",
+                "pinyin": "yuèláiyuè",
+                "meaning": "more and more"
+              },
+              {
+                "hanzi": "好",
+                "pinyin": "hǎo",
+                "meaning": "good"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "I hope my Chinese gets better and better in the future."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "getting-sick",
+    "title": "生病了",
+    "titlePinyin": "Shēngbìng Le",
+    "description": "Xiao Li wakes up feeling unwell, visits the doctor, and learns to take better care of her health.",
+    "hsk_level": 2,
+    "tags": [
+      "health",
+      "doctor",
+      "daily-life"
+    ],
+    "chapters": [
+      {
+        "id": "feeling-unwell",
+        "title": "身体不舒服",
+        "titlePinyin": "Shēntǐ Bù Shūfu — Feeling Unwell",
+        "sentences": [
+          {
+            "words": [
+              {
+                "hanzi": "今天",
+                "pinyin": "jīntiān",
+                "meaning": "today"
+              },
+              {
+                "hanzi": "早上",
+                "pinyin": "zǎoshang",
+                "meaning": "morning"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "身体",
+                "pinyin": "shēntǐ",
+                "meaning": "body"
+              },
+              {
+                "hanzi": "不",
+                "pinyin": "bù",
+                "meaning": "not"
+              },
+              {
+                "hanzi": "舒服",
+                "pinyin": "shūfu",
+                "meaning": "comfortable / well"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "This morning I am not feeling well."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "头",
+                "pinyin": "tóu",
+                "meaning": "head"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "疼",
+                "pinyin": "téng",
+                "meaning": "painful / hurts"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "也",
+                "pinyin": "yě",
+                "meaning": "also"
+              },
+              {
+                "hanzi": "发烧",
+                "pinyin": "fāshāo",
+                "meaning": "have a fever"
+              },
+              {
+                "hanzi": "了",
+                "pinyin": "le",
+                "meaning": "(change of state particle)"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "My head hurts a lot and I have a fever."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "妈妈",
+                "pinyin": "māma",
+                "meaning": "mom"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "担心",
+                "pinyin": "dānxīn",
+                "meaning": "worried"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "叫",
+                "pinyin": "jiào",
+                "meaning": "tells / asks"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "me"
+              },
+              {
+                "hanzi": "去",
+                "pinyin": "qù",
+                "meaning": "go to"
+              },
+              {
+                "hanzi": "医院",
+                "pinyin": "yīyuàn",
+                "meaning": "hospital"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Mom is very worried and tells me to go to the hospital."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "也",
+                "pinyin": "yě",
+                "meaning": "also"
+              },
+              {
+                "hanzi": "觉得",
+                "pinyin": "juéde",
+                "meaning": "feel"
+              },
+              {
+                "hanzi": "应该",
+                "pinyin": "yīnggāi",
+                "meaning": "should"
+              },
+              {
+                "hanzi": "去",
+                "pinyin": "qù",
+                "meaning": "go"
+              },
+              {
+                "hanzi": "看",
+                "pinyin": "kàn",
+                "meaning": "see"
+              },
+              {
+                "hanzi": "医生",
+                "pinyin": "yīshēng",
+                "meaning": "doctor"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "I also feel I should go see a doctor."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我们",
+                "pinyin": "wǒmen",
+                "meaning": "we"
+              },
+              {
+                "hanzi": "坐",
+                "pinyin": "zuò",
+                "meaning": "take"
+              },
+              {
+                "hanzi": "公共汽车",
+                "pinyin": "gōnggòng qìchē",
+                "meaning": "public bus"
+              },
+              {
+                "hanzi": "去",
+                "pinyin": "qù",
+                "meaning": "go to"
+              },
+              {
+                "hanzi": "医院",
+                "pinyin": "yīyuàn",
+                "meaning": "hospital"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "We take the bus to the hospital."
+          }
+        ]
+      },
+      {
+        "id": "at-the-doctor",
+        "title": "看医生",
+        "titlePinyin": "Kàn Yīshēng — Seeing the Doctor",
+        "sentences": [
+          {
+            "words": [
+              {
+                "hanzi": "医生",
+                "pinyin": "yīshēng",
+                "meaning": "doctor"
+              },
+              {
+                "hanzi": "问",
+                "pinyin": "wèn",
+                "meaning": "asks"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "me"
+              },
+              {
+                "hanzi": "：",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "meaning": "you"
+              },
+              {
+                "hanzi": "哪里",
+                "pinyin": "nǎlǐ",
+                "meaning": "where"
+              },
+              {
+                "hanzi": "不",
+                "pinyin": "bù",
+                "meaning": "not"
+              },
+              {
+                "hanzi": "舒服",
+                "pinyin": "shūfu",
+                "meaning": "comfortable"
+              },
+              {
+                "hanzi": "？",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "The doctor asks me: where do you feel unwell?"
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "告诉",
+                "pinyin": "gàosu",
+                "meaning": "tell"
+              },
+              {
+                "hanzi": "医生",
+                "pinyin": "yīshēng",
+                "meaning": "the doctor"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "头疼",
+                "pinyin": "tóuténg",
+                "meaning": "have a headache"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "也",
+                "pinyin": "yě",
+                "meaning": "also"
+              },
+              {
+                "hanzi": "发烧",
+                "pinyin": "fāshāo",
+                "meaning": "have a fever"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "I tell the doctor I have a headache and a fever."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "医生",
+                "pinyin": "yīshēng",
+                "meaning": "the doctor"
+              },
+              {
+                "hanzi": "给",
+                "pinyin": "gěi",
+                "meaning": "gives"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "me"
+              },
+              {
+                "hanzi": "看",
+                "pinyin": "kàn",
+                "meaning": "examines"
+              },
+              {
+                "hanzi": "了",
+                "pinyin": "le",
+                "meaning": "(completion particle)"
+              },
+              {
+                "hanzi": "一下",
+                "pinyin": "yīxià",
+                "meaning": "a bit / briefly"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "The doctor briefly examines me."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "他",
+                "pinyin": "tā",
+                "meaning": "he"
+              },
+              {
+                "hanzi": "说",
+                "pinyin": "shuō",
+                "meaning": "says"
+              },
+              {
+                "hanzi": "：",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "meaning": "you"
+              },
+              {
+                "hanzi": "生病",
+                "pinyin": "shēngbìng",
+                "meaning": "are sick"
+              },
+              {
+                "hanzi": "了",
+                "pinyin": "le",
+                "meaning": "(change of state)"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "要",
+                "pinyin": "yào",
+                "meaning": "need to"
+              },
+              {
+                "hanzi": "多",
+                "pinyin": "duō",
+                "meaning": "more"
+              },
+              {
+                "hanzi": "休息",
+                "pinyin": "xiūxi",
+                "meaning": "rest"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "He says: you are sick, you need more rest."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "医生",
+                "pinyin": "yīshēng",
+                "meaning": "doctor"
+              },
+              {
+                "hanzi": "给",
+                "pinyin": "gěi",
+                "meaning": "gives"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "me"
+              },
+              {
+                "hanzi": "一些",
+                "pinyin": "yīxiē",
+                "meaning": "some"
+              },
+              {
+                "hanzi": "药",
+                "pinyin": "yào",
+                "meaning": "medicine"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "叫",
+                "pinyin": "jiào",
+                "meaning": "tells me to"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "me"
+              },
+              {
+                "hanzi": "回",
+                "pinyin": "huí",
+                "meaning": "go back"
+              },
+              {
+                "hanzi": "家",
+                "pinyin": "jiā",
+                "meaning": "home"
+              },
+              {
+                "hanzi": "休息",
+                "pinyin": "xiūxi",
+                "meaning": "rest"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "The doctor gives me some medicine and tells me to go home and rest."
+          }
+        ]
+      },
+      {
+        "id": "recovery",
+        "title": "好好休息",
+        "titlePinyin": "Hǎohǎo Xiūxi — Getting Some Rest",
+        "sentences": [
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "回",
+                "pinyin": "huí",
+                "meaning": "return"
+              },
+              {
+                "hanzi": "家",
+                "pinyin": "jiā",
+                "meaning": "home"
+              },
+              {
+                "hanzi": "以后",
+                "pinyin": "yǐhòu",
+                "meaning": "after / once back"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "马上",
+                "pinyin": "mǎshàng",
+                "meaning": "immediately"
+              },
+              {
+                "hanzi": "喝",
+                "pinyin": "hē",
+                "meaning": "drink"
+              },
+              {
+                "hanzi": "了",
+                "pinyin": "le",
+                "meaning": "(completion particle)"
+              },
+              {
+                "hanzi": "药",
+                "pinyin": "yào",
+                "meaning": "medicine"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Once I returned home, I immediately took my medicine."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "妈妈",
+                "pinyin": "māma",
+                "meaning": "mom"
+              },
+              {
+                "hanzi": "给",
+                "pinyin": "gěi",
+                "meaning": "for / gives"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "me"
+              },
+              {
+                "hanzi": "做",
+                "pinyin": "zuò",
+                "meaning": "makes"
+              },
+              {
+                "hanzi": "了",
+                "pinyin": "le",
+                "meaning": "(completion particle)"
+              },
+              {
+                "hanzi": "热",
+                "pinyin": "rè",
+                "meaning": "hot"
+              },
+              {
+                "hanzi": "水",
+                "pinyin": "shuǐ",
+                "meaning": "water"
+              },
+              {
+                "hanzi": "和",
+                "pinyin": "hé",
+                "meaning": "and"
+              },
+              {
+                "hanzi": "面条",
+                "pinyin": "miàntiáo",
+                "meaning": "noodles"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Mom made me hot water and noodles."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "睡觉",
+                "pinyin": "shuìjiào",
+                "meaning": "sleep"
+              },
+              {
+                "hanzi": "休息",
+                "pinyin": "xiūxi",
+                "meaning": "rest"
+              },
+              {
+                "hanzi": "了",
+                "pinyin": "le",
+                "meaning": "(completion particle)"
+              },
+              {
+                "hanzi": "一",
+                "pinyin": "yī",
+                "meaning": "one"
+              },
+              {
+                "hanzi": "天",
+                "pinyin": "tiān",
+                "meaning": "day"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "I slept and rested for a whole day."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "第二天",
+                "pinyin": "dì èr tiān",
+                "meaning": "the next day"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "的",
+                "pinyin": "de",
+                "meaning": "'s (possessive)"
+              },
+              {
+                "hanzi": "身体",
+                "pinyin": "shēntǐ",
+                "meaning": "body / health"
+              },
+              {
+                "hanzi": "好",
+                "pinyin": "hǎo",
+                "meaning": "better"
+              },
+              {
+                "hanzi": "多了",
+                "pinyin": "duōle",
+                "meaning": "much more"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "The next day, I felt much better."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "以后",
+                "pinyin": "yǐhòu",
+                "meaning": "in the future"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "要",
+                "pinyin": "yào",
+                "meaning": "will / must"
+              },
+              {
+                "hanzi": "好好",
+                "pinyin": "hǎohǎo",
+                "meaning": "properly / well"
+              },
+              {
+                "hanzi": "照顾",
+                "pinyin": "zhàogù",
+                "meaning": "take care of"
+              },
+              {
+                "hanzi": "自己",
+                "pinyin": "zìjǐ",
+                "meaning": "myself"
+              },
+              {
+                "hanzi": "的",
+                "pinyin": "de",
+                "meaning": "'s (possessive)"
+              },
+              {
+                "hanzi": "身体",
+                "pinyin": "shēntǐ",
+                "meaning": "health"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "In the future I must take good care of my health."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "at-school",
+    "title": "在学校",
+    "titlePinyin": "Zài Xuéxiào",
+    "description": "A student shares what it is like to study Chinese at school and introduces a new friend.",
+    "hsk_level": 1,
+    "tags": [
+      "short",
+      "school",
+      "daily-life"
+    ],
+    "chapters": [
+      {
+        "id": "in-class",
+        "title": "上课",
+        "titlePinyin": "Shàng Kè — In Class",
+        "sentences": [
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I / me"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "meaning": "am / is / are"
+              },
+              {
+                "hanzi": "学生",
+                "pinyin": "xuésheng",
+                "meaning": "student"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "I am a student."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "在",
+                "pinyin": "zài",
+                "meaning": "at / in"
+              },
+              {
+                "hanzi": "学校",
+                "pinyin": "xuéxiào",
+                "meaning": "school"
+              },
+              {
+                "hanzi": "学习",
+                "pinyin": "xuéxí",
+                "meaning": "study / learn"
+              },
+              {
+                "hanzi": "汉语",
+                "pinyin": "Hànyǔ",
+                "meaning": "Chinese language"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "I study Chinese at school."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "老师",
+                "pinyin": "lǎoshī",
+                "meaning": "teacher"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "好",
+                "pinyin": "hǎo",
+                "meaning": "good / kind"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "The teacher is very good."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "有",
+                "pinyin": "yǒu",
+                "meaning": "have"
+              },
+              {
+                "hanzi": "书",
+                "pinyin": "shū",
+                "meaning": "book"
+              },
+              {
+                "hanzi": "和",
+                "pinyin": "hé",
+                "meaning": "and"
+              },
+              {
+                "hanzi": "电脑",
+                "pinyin": "diànnǎo",
+                "meaning": "computer"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "I have books and a computer."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "汉语",
+                "pinyin": "Hànyǔ",
+                "meaning": "Chinese language"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "好",
+                "pinyin": "hǎo",
+                "meaning": "good"
+              },
+              {
+                "hanzi": "，",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "喜欢",
+                "pinyin": "xǐhuan",
+                "meaning": "like / enjoy"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "Chinese is great — I really like it."
+          }
+        ]
+      },
+      {
+        "id": "friends",
+        "title": "朋友",
+        "titlePinyin": "Péngyou — Friends",
+        "sentences": [
+          {
+            "words": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "meaning": "I"
+              },
+              {
+                "hanzi": "有",
+                "pinyin": "yǒu",
+                "meaning": "have"
+              },
+              {
+                "hanzi": "一",
+                "pinyin": "yī",
+                "meaning": "one"
+              },
+              {
+                "hanzi": "个",
+                "pinyin": "gè",
+                "meaning": "(measure word for people)"
+              },
+              {
+                "hanzi": "好",
+                "pinyin": "hǎo",
+                "meaning": "good"
+              },
+              {
+                "hanzi": "朋友",
+                "pinyin": "péngyou",
+                "meaning": "friend"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "I have a good friend."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "他",
+                "pinyin": "tā",
+                "meaning": "he / him"
+              },
+              {
+                "hanzi": "叫",
+                "pinyin": "jiào",
+                "meaning": "is called"
+              },
+              {
+                "hanzi": "大卫",
+                "pinyin": "Dàwèi",
+                "meaning": "David (a name)"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "His name is David."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "他",
+                "pinyin": "tā",
+                "meaning": "he"
+              },
+              {
+                "hanzi": "也",
+                "pinyin": "yě",
+                "meaning": "also / too"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "meaning": "is"
+              },
+              {
+                "hanzi": "学生",
+                "pinyin": "xuésheng",
+                "meaning": "student"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "He is also a student."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我们",
+                "pinyin": "wǒmen",
+                "meaning": "we / us"
+              },
+              {
+                "hanzi": "都",
+                "pinyin": "dōu",
+                "meaning": "both / all"
+              },
+              {
+                "hanzi": "学习",
+                "pinyin": "xuéxí",
+                "meaning": "study"
+              },
+              {
+                "hanzi": "汉语",
+                "pinyin": "Hànyǔ",
+                "meaning": "Chinese language"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "We both study Chinese."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "大卫",
+                "pinyin": "Dàwèi",
+                "meaning": "David"
+              },
+              {
+                "hanzi": "说",
+                "pinyin": "shuō",
+                "meaning": "speak / say"
+              },
+              {
+                "hanzi": "汉语",
+                "pinyin": "Hànyǔ",
+                "meaning": "Chinese"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "meaning": "very"
+              },
+              {
+                "hanzi": "好",
+                "pinyin": "hǎo",
+                "meaning": "well / good"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "David speaks Chinese very well."
+          },
+          {
+            "words": [
+              {
+                "hanzi": "我们",
+                "pinyin": "wǒmen",
+                "meaning": "we / us"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "meaning": "are"
+              },
+              {
+                "hanzi": "好",
+                "pinyin": "hǎo",
+                "meaning": "good"
+              },
+              {
+                "hanzi": "朋友",
+                "pinyin": "péngyou",
+                "meaning": "friends"
+              },
+              {
+                "hanzi": "。",
+                "pinyin": "",
+                "meaning": "",
+                "isPunctuation": true
+              }
+            ],
+            "translation": "We are good friends."
+          }
+        ]
+      }
+    ]
+  }
+]

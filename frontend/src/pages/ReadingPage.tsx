@@ -1,7 +1,54 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { ArrowLeft, Eye, EyeOff } from 'lucide-react';
-import { stories } from '../data/stories';
 import type { Story, StoryWord } from '../types/reading';
+
+const API_URL = (import.meta.env.VITE_API_URL as string) ?? '';
+
+// ─── API response types ────────────────────────────────────────────────────────
+
+interface StorySummary {
+  id: string;       // UUID from DB
+  slug: string;     // matches the id field from stories.ts
+  title: string;
+  title_pinyin: string;
+  description: string;
+  hsk_level: 1 | 2 | 3 | 4 | 5 | 6;
+  tags: string[];
+  chapter_count: number;
+}
+
+interface StoryFull extends StorySummary {
+  chapters: Story['chapters'];
+}
+
+function summaryToStory(s: StorySummary): Story {
+  return {
+    id: s.slug,
+    title: s.title,
+    titlePinyin: s.title_pinyin,
+    description: s.description,
+    hsk_level: s.hsk_level,
+    tags: s.tags as Story['tags'],
+    chapters: Array.from({ length: s.chapter_count }, (_, i) => ({
+      id: `loading-${i}`,
+      title: '',
+      titlePinyin: '',
+      sentences: [],
+    })),
+  };
+}
+
+function fullToStory(s: StoryFull): Story {
+  return {
+    id: s.slug,
+    title: s.title,
+    titlePinyin: s.title_pinyin,
+    description: s.description,
+    hsk_level: s.hsk_level,
+    tags: s.tags as Story['tags'],
+    chapters: s.chapters,
+  };
+}
 
 // ─── Word Token ────────────────────────────────────────────────────────────────
 
@@ -502,8 +549,45 @@ function StoryCard({ story, onSelect }: StoryCardProps) {
 // ─── Reading Page ──────────────────────────────────────────────────────────────
 
 export function ReadingPage() {
+  const [summaries, setSummaries] = useState<StorySummary[]>([]);
   const [selectedStory, setSelectedStory] = useState<Story | null>(null);
   const [levelFilter, setLevelFilter] = useState<number | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [storyLoading, setStoryLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  // Fetch story list whenever level filter changes
+  useEffect(() => {
+    setLoading(true);
+    setError(null);
+    const url = levelFilter
+      ? `${API_URL}/stories?level=${levelFilter}`
+      : `${API_URL}/stories`;
+    fetch(url)
+      .then(r => {
+        if (!r.ok) throw new Error(`HTTP ${r.status}`);
+        return r.json() as Promise<StorySummary[]>;
+      })
+      .then(data => setSummaries(data))
+      .catch(e => setError((e as Error).message))
+      .finally(() => setLoading(false));
+  }, [levelFilter]);
+
+  // Open a story — fetch full content (with chapters) then show reader
+  const handleSelect = async (summary: StorySummary) => {
+    setStoryLoading(true);
+    try {
+      const resp = await fetch(`${API_URL}/stories/${summary.slug}`);
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+      const full: StoryFull = await resp.json();
+      setSelectedStory(fullToStory(full));
+    } catch (e) {
+      // Fallback: show placeholder chapters so reader still opens
+      setSelectedStory(summaryToStory(summary));
+    } finally {
+      setStoryLoading(false);
+    }
+  };
 
   if (selectedStory) {
     return (
@@ -513,9 +597,8 @@ export function ReadingPage() {
     );
   }
 
-  const filtered = levelFilter
-    ? stories.filter(s => s.hsk_level === levelFilter)
-    : stories;
+  const levelsWithStories = new Set(summaries.map(s => s.hsk_level));
+  const visibleLevels = ([1, 2, 3, 4, 5, 6] as const).filter(l => levelsWithStories.has(l));
 
   return (
     <div style={{ maxWidth: '900px', margin: '0 auto', animation: 'fadeIn 0.25s ease' }}>
@@ -541,14 +624,9 @@ export function ReadingPage() {
         </p>
       </div>
 
-      {/* Level filter pills */}
-      <div style={{
-        display: 'flex',
-        gap: '0.5rem',
-        marginBottom: 'var(--space-xl)',
-        flexWrap: 'wrap',
-      }}>
-        {[null, 1, 2, 3, 4, 5, 6].map(level => (
+      {/* Level filter pills — only levels that have stories */}
+      <div style={{ display: 'flex', gap: '0.5rem', marginBottom: 'var(--space-xl)', flexWrap: 'wrap' }}>
+        {([null, ...visibleLevels] as (number | null)[]).map(level => (
           <button
             key={level ?? 'all'}
             onClick={() => setLevelFilter(level)}
@@ -571,28 +649,51 @@ export function ReadingPage() {
         ))}
       </div>
 
-      {/* Story grid */}
-      {filtered.length === 0 ? (
+      {/* Loading / error states */}
+      {(loading || storyLoading) && (
         <div style={{
-          textAlign: 'center',
-          padding: 'var(--space-3xl)',
-          fontFamily: 'var(--font-body)',
-          color: 'var(--color-ink-black)',
-          opacity: 0.5,
+          textAlign: 'center', padding: 'var(--space-3xl)',
+          fontFamily: 'var(--font-mono)', fontSize: '0.8rem',
+          color: 'var(--color-gold)', letterSpacing: '0.05em',
+        }}>
+          {storyLoading ? 'Opening story…' : 'Loading stories…'}
+        </div>
+      )}
+
+      {error && !loading && (
+        <div style={{
+          textAlign: 'center', padding: 'var(--space-3xl)',
+          fontFamily: 'var(--font-body)', color: 'var(--color-crimson)',
+          fontSize: '0.9rem',
+        }}>
+          Could not load stories: {error}
+        </div>
+      )}
+
+      {/* Story grid */}
+      {!loading && !error && summaries.length === 0 && (
+        <div style={{
+          textAlign: 'center', padding: 'var(--space-3xl)',
+          fontFamily: 'var(--font-body)', color: 'var(--color-ink-black)', opacity: 0.5,
         }}>
           No stories yet for this level. Check back soon.
         </div>
-      ) : (
+      )}
+
+      {!loading && !error && summaries.length > 0 && (
         <div style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
           gap: 'var(--space-xl)',
+          opacity: storyLoading ? 0.5 : 1,
+          pointerEvents: storyLoading ? 'none' : 'auto',
+          transition: 'opacity 0.2s',
         }}>
-          {filtered.map(story => (
+          {summaries.map(summary => (
             <StoryCard
-              key={story.id}
-              story={story}
-              onSelect={() => setSelectedStory(story)}
+              key={summary.slug}
+              story={summaryToStory(summary)}
+              onSelect={() => { void handleSelect(summary); }}
             />
           ))}
         </div>
