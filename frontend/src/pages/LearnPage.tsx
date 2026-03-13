@@ -1,10 +1,29 @@
 import { useCallback, useEffect, useState } from 'react';
-import { Check, X, RotateCcw } from 'lucide-react';
+import { Check, X, RotateCcw, Zap, BookOpen, Headphones, Grid3X3, ArrowRight } from 'lucide-react';
 import { api } from '../lib/api';
 import type { StudyCard } from '../types/user-word';
+import type { Word } from '../types/word';
 import { useToastStore } from '../store/toast-store';
 import { Flashcard } from '../components/Flashcard';
 import { SwipeContainer } from '../components/SwipeContainer';
+import { MatchingGame } from '../components/MatchingGame';
+import { ListeningQuiz } from '../components/ListeningQuiz';
+import { MultipleChoice } from '../components/MultipleChoice';
+
+type ExerciseType = 'flashcard' | 'matching' | 'listening' | 'multiple-choice';
+
+interface Exercise {
+  type: ExerciseType;
+  cards: StudyCard[];
+  distractors?: Word[];
+  direction?: 'hanzi-to-meaning' | 'meaning-to-hanzi';
+}
+
+interface SessionStats {
+  correct: number;
+  incorrect: number;
+  total: number;
+}
 
 function assignModes(cards: StudyCard[]): StudyCard[] {
   return cards.map((c) => ({
@@ -13,32 +32,111 @@ function assignModes(cards: StudyCard[]): StudyCard[] {
   }));
 }
 
-interface SessionStats {
-  correct: number;
-  incorrect: number;
-  mastered: number;
+/**
+ * Build a mixed exercise plan from session cards + distractors.
+ * Distributes cards across exercise types for variety.
+ */
+function buildExercisePlan(cards: StudyCard[], distractors: Word[]): Exercise[] {
+  if (cards.length === 0) return [];
+
+  const exercises: Exercise[] = [];
+  const shuffled = [...cards];
+  let idx = 0;
+
+  while (idx < shuffled.length) {
+    const remaining = shuffled.length - idx;
+
+    // Matching game needs 4-5 cards
+    if (remaining >= 4 && exercises.length % 4 === 0) {
+      const matchCount = Math.min(5, remaining);
+      const matchCards = shuffled.slice(idx, idx + matchCount);
+      exercises.push({
+        type: 'matching',
+        cards: matchCards,
+        distractors: distractors.slice(0, 2),
+      });
+      idx += matchCount;
+      continue;
+    }
+
+    // Alternate between flashcard, listening, and multiple choice
+    const exerciseOptions: ExerciseType[] = ['flashcard', 'listening', 'multiple-choice'];
+    const pick = exerciseOptions[exercises.length % exerciseOptions.length];
+
+    const card = shuffled[idx];
+    const direction: 'hanzi-to-meaning' | 'meaning-to-hanzi' =
+      Math.random() > 0.5 ? 'hanzi-to-meaning' : 'meaning-to-hanzi';
+
+    if (pick === 'listening' && distractors.length >= 3) {
+      exercises.push({
+        type: 'listening',
+        cards: [card],
+        distractors: distractors.slice(0, 3),
+      });
+    } else if (pick === 'multiple-choice' && distractors.length >= 3) {
+      exercises.push({
+        type: 'multiple-choice',
+        cards: [card],
+        distractors: distractors.slice(0, 3),
+        direction,
+      });
+    } else {
+      exercises.push({
+        type: 'flashcard',
+        cards: [{ ...card, mode: direction }],
+      });
+    }
+    idx += 1;
+  }
+
+  return exercises;
 }
 
 export function LearnPage() {
   const addToast = useToastStore((s) => s.addToast);
-  const [cards, setCards] = useState<StudyCard[]>([]);
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [revealed, setRevealed] = useState(false);
-  const [showPinyin, setShowPinyin] = useState(false);
+  const [exercises, setExercises] = useState<Exercise[]>([]);
+  const [currentIdx, setCurrentIdx] = useState(0);
+  const [allCards, setAllCards] = useState<StudyCard[]>([]);
   const [loading, setLoading] = useState(true);
-  const [reviewing, setReviewing] = useState(false);
-  const [stats, setStats] = useState<SessionStats>({ correct: 0, incorrect: 0, mastered: 0 });
+  const [stats, setStats] = useState<SessionStats>({ correct: 0, incorrect: 0, total: 0 });
   const [sessionDone, setSessionDone] = useState(false);
+
+  // Flashcard-specific state
+  const [revealed, setRevealed] = useState(false);
+  const [reviewing, setReviewing] = useState(false);
+  const [showPinyin, setShowPinyin] = useState(false);
 
   const fetchSession = useCallback(async () => {
     setLoading(true);
     try {
-      const data = await api.get<StudyCard[]>('/user-words/session?limit=20');
-      const withModes = assignModes(data);
-      setCards(withModes);
-      setCurrentIndex(0);
+      const cards = await api.get<StudyCard[]>('/user-words/session?limit=20');
+      if (cards.length === 0) {
+        setAllCards([]);
+        setExercises([]);
+        setLoading(false);
+        return;
+      }
+
+      const withModes = assignModes(cards);
+      setAllCards(withModes);
+
+      // Fetch distractors for exercises
+      const wordIds = cards.map((c) => c.word_id);
+      let distractors: Word[] = [];
+      try {
+        distractors = await api.post<Word[]>('/user-words/distractors', {
+          word_ids: wordIds,
+          count: 12,
+        });
+      } catch {
+        // Fallback: no distractors, will use flashcard-only mode
+      }
+
+      const plan = buildExercisePlan(withModes, distractors);
+      setExercises(plan);
+      setCurrentIdx(0);
       setRevealed(false);
-      setStats({ correct: 0, incorrect: 0, mastered: 0 });
+      setStats({ correct: 0, incorrect: 0, total: 0 });
       setSessionDone(false);
     } catch (err) {
       addToast((err as Error).message, 'error');
@@ -51,48 +149,130 @@ export function LearnPage() {
     fetchSession();
   }, [fetchSession]);
 
-  const handleAnswer = async (correct: boolean) => {
+  const advanceExercise = useCallback(() => {
+    const next = currentIdx + 1;
+    if (next >= exercises.length) {
+      setSessionDone(true);
+    } else {
+      setCurrentIdx(next);
+      setRevealed(false);
+    }
+  }, [currentIdx, exercises.length]);
+
+  // Record review on backend
+  const recordReview = useCallback(async (cardId: string, correct: boolean) => {
+    try {
+      await api.patch(`/user-words/${cardId}/review`, { correct });
+    } catch {
+      // Silent fail for review recording — don't break UX
+    }
+  }, []);
+
+  // Flashcard answer handler
+  const handleFlashcardAnswer = useCallback(async (correct: boolean) => {
     if (reviewing || !revealed) return;
     setReviewing(true);
 
-    const card = cards[currentIndex];
-    try {
-      const updated = await api.patch<StudyCard>(`/user-words/${card.id}/review`, { correct });
+    const exercise = exercises[currentIdx];
+    const card = exercise.cards[0];
 
-      setStats((prev) => ({
-        correct: prev.correct + (correct ? 1 : 0),
-        incorrect: prev.incorrect + (correct ? 0 : 1),
-        mastered: prev.mastered + (updated.status === 'mastered' ? 1 : 0),
-      }));
+    await recordReview(card.id, correct);
 
-      if (!correct) {
-        // Re-insert incorrect card 3-5 positions later
-        const reinsertPos = Math.min(
-          currentIndex + 3 + Math.floor(Math.random() * 3),
-          cards.length,
-        );
-        const newCards = [...cards];
-        const reinserted: StudyCard = {
-          ...card,
-          mode: Math.random() > 0.5 ? 'hanzi-to-meaning' : 'meaning-to-hanzi',
-        };
-        newCards.splice(reinsertPos, 0, reinserted);
-        setCards(newCards);
-      }
+    setStats((prev) => ({
+      correct: prev.correct + (correct ? 1 : 0),
+      incorrect: prev.incorrect + (correct ? 0 : 1),
+      total: prev.total + 1,
+    }));
 
-      const nextIdx = currentIndex + 1;
-      if (nextIdx >= cards.length + (correct ? 0 : 1)) {
-        setSessionDone(true);
-      } else {
-        setCurrentIndex(nextIdx);
-        setRevealed(false);
-      }
-    } catch (err) {
-      addToast((err as Error).message, 'error');
-    } finally {
-      setReviewing(false);
+    // If incorrect, re-insert as a flashcard later in the session
+    if (!correct) {
+      const reinsertPos = Math.min(
+        currentIdx + 3 + Math.floor(Math.random() * 3),
+        exercises.length,
+      );
+      const newExercises = [...exercises];
+      newExercises.splice(reinsertPos, 0, {
+        type: 'flashcard',
+        cards: [{ ...card, mode: Math.random() > 0.5 ? 'hanzi-to-meaning' : 'meaning-to-hanzi' }],
+      });
+      setExercises(newExercises);
     }
-  };
+
+    setTimeout(() => {
+      setReviewing(false);
+      advanceExercise();
+    }, 250);
+  }, [reviewing, revealed, exercises, currentIdx, recordReview, advanceExercise]);
+
+  // Matching game complete handler
+  const handleMatchingComplete = useCallback(async (results: { wordId: string; correct: boolean }[]) => {
+    // Find corresponding cards for review recording
+    const exercise = exercises[currentIdx];
+    for (const result of results) {
+      const card = exercise.cards.find((c) => c.word_id === result.wordId);
+      if (card) {
+        await recordReview(card.id, result.correct);
+      }
+    }
+
+    const correctCount = results.filter((r) => r.correct).length;
+    const incorrectCount = results.length - correctCount;
+
+    setStats((prev) => ({
+      correct: prev.correct + correctCount,
+      incorrect: prev.incorrect + incorrectCount,
+      total: prev.total + results.length,
+    }));
+
+    // Re-insert incorrect words as flashcards
+    const incorrectCards = results
+      .filter((r) => !r.correct)
+      .map((r) => exercise.cards.find((c) => c.word_id === r.wordId))
+      .filter(Boolean) as StudyCard[];
+
+    if (incorrectCards.length > 0) {
+      const newExercises = [...exercises];
+      for (const card of incorrectCards) {
+        const pos = Math.min(currentIdx + 2 + Math.floor(Math.random() * 3), newExercises.length);
+        newExercises.splice(pos, 0, {
+          type: 'flashcard',
+          cards: [{ ...card, mode: Math.random() > 0.5 ? 'hanzi-to-meaning' : 'meaning-to-hanzi' }],
+        });
+      }
+      setExercises(newExercises);
+    }
+
+    setTimeout(advanceExercise, 800);
+  }, [exercises, currentIdx, recordReview, advanceExercise]);
+
+  // Listening / Multiple choice answer handler
+  const handleQuizAnswer = useCallback(async (correct: boolean) => {
+    const exercise = exercises[currentIdx];
+    const card = exercise.cards[0];
+
+    await recordReview(card.id, correct);
+
+    setStats((prev) => ({
+      correct: prev.correct + (correct ? 1 : 0),
+      incorrect: prev.incorrect + (correct ? 0 : 1),
+      total: prev.total + 1,
+    }));
+
+    if (!correct) {
+      const newExercises = [...exercises];
+      const pos = Math.min(currentIdx + 3 + Math.floor(Math.random() * 3), newExercises.length);
+      newExercises.splice(pos, 0, {
+        type: 'flashcard',
+        cards: [{ ...card, mode: Math.random() > 0.5 ? 'hanzi-to-meaning' : 'meaning-to-hanzi' }],
+      });
+      setExercises(newExercises);
+    }
+
+    // The quiz components have their own delay, then we advance
+    setTimeout(advanceExercise, 200);
+  }, [exercises, currentIdx, recordReview, advanceExercise]);
+
+  // --- Render ---
 
   if (loading) {
     return (
@@ -110,7 +290,7 @@ export function LearnPage() {
     );
   }
 
-  if (cards.length === 0) {
+  if (allCards.length === 0) {
     return (
       <div style={{
         display: 'flex',
@@ -120,15 +300,29 @@ export function LearnPage() {
         minHeight: '60vh',
         gap: 'var(--space-lg)',
       }}>
+        <div style={{
+          width: '64px',
+          height: '64px',
+          borderRadius: '50%',
+          border: '2px solid var(--color-gold)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          opacity: 0.5,
+        }}>
+          <BookOpen size={28} style={{ color: 'var(--color-ink)' }} />
+        </div>
         <h2 style={{ fontSize: '1.5rem' }}>No cards to study</h2>
-        <p style={{ opacity: 0.6, textAlign: 'center', maxWidth: '400px' }}>
-          Mark some words as "Learn" in the Browse page to start studying.
+        <p style={{ opacity: 0.5, textAlign: 'center', maxWidth: '360px', fontSize: '0.95rem' }}>
+          Mark some words as "Still learning" in the Browse page to start studying.
         </p>
       </div>
     );
   }
 
   if (sessionDone) {
+    const accuracy = stats.total > 0 ? Math.round((stats.correct / stats.total) * 100) : 0;
+
     return (
       <div style={{
         display: 'flex',
@@ -137,48 +331,94 @@ export function LearnPage() {
         justifyContent: 'center',
         minHeight: '60vh',
         gap: 'var(--space-xl)',
+        animation: 'fadeIn 0.4s ease',
       }}>
-        <h2 style={{ fontSize: '1.75rem' }}>Session Complete</h2>
+        <h2 style={{ fontSize: '1.75rem', fontFamily: 'var(--font-heading)' }}>
+          Session Complete
+        </h2>
+
+        {/* Accuracy ring */}
+        <div style={{
+          position: 'relative',
+          width: '120px',
+          height: '120px',
+        }}>
+          <svg viewBox="0 0 120 120" style={{ width: '100%', height: '100%' }}>
+            <circle cx="60" cy="60" r="52" fill="none" stroke="var(--color-paper-dark)" strokeWidth="8" />
+            <circle
+              cx="60" cy="60" r="52"
+              fill="none"
+              stroke={accuracy >= 70 ? '#2d6a4f' : 'var(--color-vermillion)'}
+              strokeWidth="8"
+              strokeDasharray={`${(accuracy / 100) * 327} 327`}
+              strokeLinecap="round"
+              transform="rotate(-90 60 60)"
+              style={{ transition: 'stroke-dasharray 1s ease' }}
+            />
+          </svg>
+          <span style={{
+            position: 'absolute',
+            inset: 0,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            fontFamily: 'var(--font-mono)',
+            fontSize: '1.5rem',
+            fontWeight: 500,
+            color: accuracy >= 70 ? '#2d6a4f' : 'var(--color-vermillion)',
+          }}>
+            {accuracy}%
+          </span>
+        </div>
+
         <div style={{
           background: 'var(--color-paper)',
           border: '1px solid var(--color-gold)',
           borderRadius: '4px',
-          padding: 'var(--space-2xl)',
+          padding: 'var(--space-xl) var(--space-2xl)',
           display: 'flex',
           flexDirection: 'column',
           gap: 'var(--space-md)',
-          minWidth: '280px',
+          minWidth: '260px',
         }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-            <span>Correct</span>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <span style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+              <Check size={16} style={{ color: '#2d6a4f' }} /> Correct
+            </span>
             <span style={{ fontFamily: 'var(--font-mono)', color: '#2d6a4f', fontWeight: 500 }}>
               {stats.correct}
             </span>
           </div>
-          <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-            <span>Incorrect</span>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <span style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+              <X size={16} style={{ color: 'var(--color-vermillion)' }} /> Incorrect
+            </span>
             <span style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-vermillion)', fontWeight: 500 }}>
               {stats.incorrect}
             </span>
           </div>
-          {stats.mastered > 0 && (
-            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-              <span>Newly mastered</span>
-              <span style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-ink)', fontWeight: 500 }}>
-                {stats.mastered}
-              </span>
-            </div>
-          )}
+          <div style={{
+            borderTop: '1px solid var(--color-gold)',
+            paddingTop: 'var(--space-sm)',
+            display: 'flex',
+            justifyContent: 'space-between',
+            opacity: 0.6,
+            fontSize: '0.9rem',
+          }}>
+            <span>Total</span>
+            <span style={{ fontFamily: 'var(--font-mono)' }}>{stats.total}</span>
+          </div>
         </div>
+
         <button
           onClick={fetchSession}
           style={{
             display: 'flex',
             alignItems: 'center',
-            gap: '0.4rem',
+            gap: '0.5rem',
             background: 'var(--color-crimson)',
             color: 'var(--color-paper-light)',
-            padding: '0.7rem 1.5rem',
+            padding: '0.75rem 1.75rem',
             borderRadius: '4px',
             fontWeight: 500,
             fontSize: '1rem',
@@ -191,7 +431,8 @@ export function LearnPage() {
     );
   }
 
-  const currentCard = cards[currentIndex];
+  const exercise = exercises[currentIdx];
+  const progressPercent = ((currentIdx) / exercises.length) * 100;
 
   return (
     <div style={{
@@ -201,97 +442,207 @@ export function LearnPage() {
       gap: 'var(--space-lg)',
       minHeight: '70vh',
     }}>
-      {/* Header */}
+      {/* Progress bar + controls */}
       <div style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
         width: '100%',
-        maxWidth: '480px',
+        maxWidth: '640px',
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 'var(--space-sm)',
       }}>
-        <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.85rem', opacity: 0.6 }}>
-          {currentIndex + 1} / {cards.length}
-        </span>
-        <button
-          onClick={() => setShowPinyin(!showPinyin)}
-          style={{
-            background: showPinyin ? 'var(--color-crimson)' : 'var(--color-paper-dark)',
-            color: showPinyin ? 'var(--color-paper-light)' : 'var(--color-ink-black)',
-            border: '1px solid',
-            borderColor: showPinyin ? 'var(--color-crimson)' : 'var(--color-gold)',
-            borderRadius: '12px',
-            padding: '0.3rem 0.8rem',
-            fontSize: '0.8rem',
-            fontFamily: 'var(--font-mono)',
-          }}
-        >
-          Pinyin {showPinyin ? 'ON' : 'OFF'}
-        </button>
-      </div>
+        {/* Progress bar */}
+        <div style={{
+          width: '100%',
+          height: '4px',
+          background: 'var(--color-paper-dark)',
+          borderRadius: '2px',
+          overflow: 'hidden',
+        }}>
+          <div style={{
+            width: `${progressPercent}%`,
+            height: '100%',
+            background: 'var(--color-crimson)',
+            borderRadius: '2px',
+            transition: 'width 0.3s ease',
+          }} />
+        </div>
 
-      {/* Card */}
-      <SwipeContainer
-        onSwipeRight={() => handleAnswer(true)}
-        onSwipeLeft={() => handleAnswer(false)}
-        enabled={revealed}
-      >
-        <Flashcard
-          key={`${currentCard.id}-${currentIndex}`}
-          card={currentCard}
-          showPinyin={showPinyin}
-          onRevealed={() => setRevealed(true)}
-        />
-      </SwipeContainer>
-
-      {/* Buttons */}
-      {revealed && (
+        {/* Header row */}
         <div style={{
           display: 'flex',
-          gap: 'var(--space-lg)',
-          animation: 'fadeIn 0.2s ease',
+          alignItems: 'center',
+          justifyContent: 'space-between',
         }}>
-          <button
-            onClick={() => handleAnswer(false)}
-            disabled={reviewing}
-            style={{
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: 'var(--space-sm)',
+          }}>
+            <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', opacity: 0.5 }}>
+              {currentIdx + 1} / {exercises.length}
+            </span>
+
+            {/* Exercise type indicator */}
+            <span style={{
               display: 'flex',
               alignItems: 'center',
-              gap: '0.4rem',
-              background: 'transparent',
-              color: 'var(--color-vermillion)',
-              border: '1px solid var(--color-vermillion)',
+              gap: '0.3rem',
+              fontFamily: 'var(--font-mono)',
+              fontSize: '0.7rem',
+              color: 'var(--color-ink)',
+              background: 'rgba(181, 31, 9, 0.08)',
+              padding: '2px 8px',
               borderRadius: '4px',
-              padding: '0.6rem 1.5rem',
-              fontWeight: 500,
-              fontSize: '0.95rem',
-              opacity: reviewing ? 0.5 : 1,
-            }}
-          >
-            <X size={18} />
-            Incorrect
-          </button>
-          <button
-            onClick={() => handleAnswer(true)}
-            disabled={reviewing}
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '0.4rem',
-              background: '#2d6a4f',
-              color: 'var(--color-paper-light)',
-              border: '1px solid #2d6a4f',
-              borderRadius: '4px',
-              padding: '0.6rem 1.5rem',
-              fontWeight: 500,
-              fontSize: '0.95rem',
-              opacity: reviewing ? 0.5 : 1,
-            }}
-          >
-            <Check size={18} />
-            Correct
-          </button>
+              textTransform: 'uppercase',
+              letterSpacing: '0.05em',
+            }}>
+              {exercise.type === 'flashcard' && <><Zap size={12} /> Flashcard</>}
+              {exercise.type === 'matching' && <><Grid3X3 size={12} /> Match</>}
+              {exercise.type === 'listening' && <><Headphones size={12} /> Listen</>}
+              {exercise.type === 'multiple-choice' && <><BookOpen size={12} /> Quiz</>}
+            </span>
+          </div>
+
+          <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-sm)' }}>
+            {/* Stats mini display */}
+            <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', color: '#2d6a4f' }}>
+              {stats.correct}
+            </span>
+            <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', opacity: 0.3 }}>/</span>
+            <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', color: 'var(--color-vermillion)' }}>
+              {stats.incorrect}
+            </span>
+
+            {exercise.type === 'flashcard' && (
+              <button
+                onClick={() => setShowPinyin(!showPinyin)}
+                style={{
+                  background: showPinyin ? 'var(--color-crimson)' : 'var(--color-paper-dark)',
+                  color: showPinyin ? 'var(--color-paper-light)' : 'var(--color-ink-black)',
+                  border: '1px solid',
+                  borderColor: showPinyin ? 'var(--color-crimson)' : 'var(--color-gold)',
+                  borderRadius: '12px',
+                  padding: '0.2rem 0.6rem',
+                  fontSize: '0.75rem',
+                  fontFamily: 'var(--font-mono)',
+                  marginLeft: 'var(--space-sm)',
+                }}
+              >
+                拼音 {showPinyin ? 'ON' : 'OFF'}
+              </button>
+            )}
+          </div>
         </div>
-      )}
+      </div>
+
+      {/* Exercise content */}
+      <div style={{
+        width: '100%',
+        display: 'flex',
+        justifyContent: 'center',
+        animation: 'fadeIn 0.3s ease',
+      }}
+        key={`exercise-${currentIdx}`}
+      >
+        {exercise.type === 'flashcard' && (
+          <div style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            gap: 'var(--space-lg)',
+          }}>
+            <SwipeContainer
+              onSwipeRight={() => handleFlashcardAnswer(true)}
+              onSwipeLeft={() => handleFlashcardAnswer(false)}
+              enabled={revealed}
+            >
+              <Flashcard
+                key={`${exercise.cards[0].id}-${currentIdx}`}
+                card={exercise.cards[0]}
+                showPinyin={showPinyin}
+                onRevealed={() => setRevealed(true)}
+              />
+            </SwipeContainer>
+
+            {revealed && (
+              <div style={{
+                display: 'flex',
+                gap: 'var(--space-lg)',
+                animation: 'fadeIn 0.2s ease',
+              }}>
+                <button
+                  onClick={() => handleFlashcardAnswer(false)}
+                  disabled={reviewing}
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.4rem',
+                    background: 'transparent',
+                    color: 'var(--color-vermillion)',
+                    border: '1.5px solid var(--color-vermillion)',
+                    borderRadius: '4px',
+                    padding: '0.6rem 1.3rem',
+                    fontWeight: 500,
+                    fontSize: '0.9rem',
+                    opacity: reviewing ? 0.5 : 1,
+                  }}
+                >
+                  <X size={16} />
+                  Again
+                </button>
+                <button
+                  onClick={() => handleFlashcardAnswer(true)}
+                  disabled={reviewing}
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.4rem',
+                    background: '#2d6a4f',
+                    color: 'var(--color-paper-light)',
+                    border: '1.5px solid #2d6a4f',
+                    borderRadius: '4px',
+                    padding: '0.6rem 1.3rem',
+                    fontWeight: 500,
+                    fontSize: '0.9rem',
+                    opacity: reviewing ? 0.5 : 1,
+                  }}
+                >
+                  <Check size={16} />
+                  Got it
+                </button>
+              </div>
+            )}
+          </div>
+        )}
+
+        {exercise.type === 'matching' && (
+          <MatchingGame
+            key={`matching-${currentIdx}`}
+            studyWords={exercise.cards.map((c) => c.words)}
+            distractors={exercise.distractors ?? []}
+            onComplete={handleMatchingComplete}
+          />
+        )}
+
+        {exercise.type === 'listening' && (
+          <ListeningQuiz
+            key={`listening-${currentIdx}`}
+            targetWord={exercise.cards[0].words}
+            options={exercise.distractors ?? []}
+            onAnswer={handleQuizAnswer}
+          />
+        )}
+
+        {exercise.type === 'multiple-choice' && (
+          <MultipleChoice
+            key={`mc-${currentIdx}`}
+            targetWord={exercise.cards[0].words}
+            options={exercise.distractors ?? []}
+            direction={exercise.direction ?? 'hanzi-to-meaning'}
+            onAnswer={handleQuizAnswer}
+          />
+        )}
+      </div>
     </div>
   );
 }

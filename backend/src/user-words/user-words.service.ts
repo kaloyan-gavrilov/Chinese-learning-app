@@ -117,8 +117,8 @@ export class UserWordsService {
   async getSession(userId: string, limit: number): Promise<StudyCard[]> {
     const now = new Date().toISOString();
 
-    // First: words due for review
-    const { data: dueWords, error: dueError } = await this.supabase
+    // 1. Words due for review (learn status, overdue)
+    const { data: dueLearn, error: dueError } = await this.supabase
       .getClient()
       .from('user_words')
       .select('*, words(*)')
@@ -130,11 +130,30 @@ export class UserWordsService {
 
     if (dueError) throw dueError;
 
-    const remaining = limit - (dueWords?.length ?? 0);
-    let newWords: StudyCard[] = [];
+    let remaining = limit - (dueLearn?.length ?? 0);
+    let knownDue: StudyCard[] = [];
 
+    // 2. Known/mastered words due for review (periodic reinforcement)
     if (remaining > 0) {
-      // Then: learn words not yet reviewed (next_review_at in future or just added)
+      const knownLimit = Math.max(3, Math.ceil(limit * 0.2)); // ~20% of session, min 3
+      const { data, error } = await this.supabase
+        .getClient()
+        .from('user_words')
+        .select('*, words(*)')
+        .eq('user_id', userId)
+        .in('status', ['known', 'mastered'])
+        .lte('next_review_at', now)
+        .order('next_review_at', { ascending: true })
+        .limit(Math.min(knownLimit, remaining));
+
+      if (error) throw error;
+      knownDue = (data ?? []) as unknown as StudyCard[];
+      remaining -= knownDue.length;
+    }
+
+    // 3. Learn words not yet due (fill remaining slots)
+    let newWords: StudyCard[] = [];
+    if (remaining > 0) {
       const { data, error } = await this.supabase
         .getClient()
         .from('user_words')
@@ -149,10 +168,49 @@ export class UserWordsService {
       newWords = (data ?? []) as unknown as StudyCard[];
     }
 
-    const allCards = [...(dueWords ?? []), ...newWords] as unknown as StudyCard[];
+    const allCards = [
+      ...(dueLearn ?? []),
+      ...knownDue,
+      ...newWords,
+    ] as unknown as StudyCard[];
 
-    // Shuffle within groups
     return this.shuffle(allCards);
+  }
+
+  /**
+   * Get distractor words for exercises (matching, multiple choice).
+   * Returns random words from the same HSK level that are NOT in the target set.
+   */
+  async getDistractors(
+    userId: string,
+    wordIds: string[],
+    count: number,
+  ): Promise<StudyCard['words'][]> {
+    if (wordIds.length === 0) return [];
+
+    // Get the HSK levels of the target words
+    const { data: targetWords, error: twError } = await this.supabase
+      .getClient()
+      .from('words')
+      .select('hsk_level')
+      .in('id', wordIds);
+
+    if (twError) throw twError;
+
+    const levels = [...new Set((targetWords ?? []).map((w: { hsk_level: number }) => w.hsk_level))];
+
+    // Get random words from the same levels, excluding target words
+    const { data, error } = await this.supabase
+      .getClient()
+      .from('words')
+      .select('id, hsk_level, hanzi, pinyin, meaning')
+      .in('hsk_level', levels)
+      .not('id', 'in', `(${wordIds.join(',')})`)
+      .limit(count * 3); // fetch extra to allow shuffling
+
+    if (error) throw error;
+
+    return this.shuffle(data ?? []).slice(0, count) as StudyCard['words'][];
   }
 
   private shuffle<T>(array: T[]): T[] {

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Volume2, Check, X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ArrowLeft, Volume2, Check, X, ChevronLeft, ChevronRight, Eye, EyeOff } from 'lucide-react';
 import { useWordsStore } from '../store/words-store';
 import { useToastStore } from '../store/toast-store';
 import { useSpeech } from '../hooks/useSpeech';
@@ -17,6 +17,7 @@ export function LevelBrowsePage() {
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [marking, setMarking] = useState(false);
+  const [showPinyin, setShowPinyin] = useState(true);
 
   useEffect(() => {
     setCurrentIndex(0);
@@ -27,10 +28,10 @@ export function LevelBrowsePage() {
     ]).catch((err) => addToast((err as Error).message, 'error'));
   }, [levelNum, fetchWords, fetchUserWords, fetchProgress, addToast]);
 
-  const currentWord = words[currentIndex];
-  const wordStatus = currentWord
-    ? userWords.find((uw) => uw.word_id === currentWord.id)?.status
-    : undefined;
+  const userWordIds = new Set(userWords.map((uw) => uw.word_id));
+  const unsortedWords = words.filter((w) => !userWordIds.has(w.id));
+
+  const currentWord = unsortedWords[currentIndex];
 
   const levelProgress = progress.find((p) => p.level === levelNum);
   const known = levelProgress?.known ?? 0;
@@ -43,9 +44,10 @@ export function LevelBrowsePage() {
     try {
       await markWord(currentWord.id, status);
       await fetchProgress();
-      if (currentIndex < words.length - 1) {
-        setCurrentIndex((i) => i + 1);
-      }
+      // After marking, the word will be filtered out of unsortedWords,
+      // so keep the same index (which now points to the next word).
+      // Only adjust if we're past the end of the new list.
+      await fetchUserWords(levelNum);
     } catch (err) {
       addToast((err as Error).message, 'error');
     } finally {
@@ -53,7 +55,14 @@ export function LevelBrowsePage() {
     }
   };
 
-  const isLast = currentIndex === words.length - 1;
+  // Clamp index if words were removed from the list
+  useEffect(() => {
+    if (unsortedWords.length > 0 && currentIndex >= unsortedWords.length) {
+      setCurrentIndex(unsortedWords.length - 1);
+    }
+  }, [unsortedWords.length, currentIndex]);
+
+  const isLast = currentIndex === unsortedWords.length - 1;
 
   if (loading) {
     return (
@@ -63,12 +72,7 @@ export function LevelBrowsePage() {
     );
   }
 
-  const borderColor =
-    wordStatus === 'known' || wordStatus === 'mastered'
-      ? '#2d6a4f'
-      : wordStatus === 'learn'
-        ? 'var(--color-vermillion)'
-        : 'var(--color-gold)';
+  const borderColor = 'var(--color-gold)';
 
   return (
     <div style={{ animation: 'fadeIn 0.3s ease', display: 'flex', flexDirection: 'column', gap: 'var(--space-xl)' }}>
@@ -103,9 +107,29 @@ export function LevelBrowsePage() {
           HSK {levelNum}
         </span>
 
-        <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', opacity: 0.55 }}>
-          {words.length > 0 ? `${currentIndex + 1} / ${words.length}` : '—'}
-        </span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-sm)' }}>
+          <button
+            onClick={() => setShowPinyin((v) => !v)}
+            style={{
+              background: 'none',
+              color: 'var(--color-ink-black)',
+              opacity: showPinyin ? 0.55 : 0.3,
+              display: 'flex',
+              alignItems: 'center',
+              gap: '4px',
+              fontSize: '0.75rem',
+              fontFamily: 'var(--font-mono)',
+              padding: '2px 0',
+            }}
+            title={showPinyin ? 'Hide pinyin' : 'Show pinyin'}
+          >
+            {showPinyin ? <Eye size={14} /> : <EyeOff size={14} />}
+            拼音
+          </button>
+          <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', opacity: 0.55 }}>
+            {unsortedWords.length > 0 ? `${currentIndex + 1} / ${unsortedWords.length}` : '—'}
+          </span>
+        </div>
       </div>
 
       {/* Progress stats */}
@@ -139,21 +163,6 @@ export function LevelBrowsePage() {
             position: 'relative',
             transition: 'border-color 0.25s ease',
           }}>
-            {wordStatus && (
-              <span style={{
-                position: 'absolute',
-                top: 'var(--space-sm)',
-                right: 'var(--space-md)',
-                fontSize: '0.65rem',
-                fontFamily: 'var(--font-mono)',
-                color: wordStatus === 'known' || wordStatus === 'mastered' ? '#2d6a4f' : 'var(--color-vermillion)',
-                textTransform: 'uppercase',
-                letterSpacing: '0.1em',
-              }}>
-                {wordStatus}
-              </span>
-            )}
-
             <div style={{
               fontFamily: 'var(--font-hanzi)',
               fontSize: 'clamp(4rem, 12vw, 7rem)',
@@ -181,15 +190,17 @@ export function LevelBrowsePage() {
               </button>
             )}
 
-            <div style={{
-              fontFamily: 'var(--font-mono)',
-              fontSize: '1rem',
-              color: 'var(--color-ink-black)',
-              opacity: 0.6,
-              marginBottom: 'var(--space-sm)',
-            }}>
-              {currentWord.pinyin}
-            </div>
+            {showPinyin && (
+              <div style={{
+                fontFamily: 'var(--font-mono)',
+                fontSize: '1rem',
+                color: 'var(--color-ink-black)',
+                opacity: 0.6,
+                marginBottom: 'var(--space-sm)',
+              }}>
+                {currentWord.pinyin}
+              </div>
+            )}
 
             <div style={{
               fontFamily: 'var(--font-body)',
@@ -214,8 +225,8 @@ export function LevelBrowsePage() {
               style={{
                 flex: 1,
                 padding: 'var(--space-md) var(--space-lg)',
-                background: wordStatus === 'learn' ? 'var(--color-vermillion)' : 'transparent',
-                color: wordStatus === 'learn' ? 'var(--color-paper-light)' : 'var(--color-vermillion)',
+                background: 'transparent',
+                color: 'var(--color-vermillion)',
                 border: '2px solid var(--color-vermillion)',
                 borderRadius: '4px',
                 fontSize: '0.95rem',
@@ -236,8 +247,8 @@ export function LevelBrowsePage() {
               style={{
                 flex: 1,
                 padding: 'var(--space-md) var(--space-lg)',
-                background: wordStatus === 'known' || wordStatus === 'mastered' ? '#2d6a4f' : 'transparent',
-                color: wordStatus === 'known' || wordStatus === 'mastered' ? 'var(--color-paper-light)' : '#2d6a4f',
+                background: 'transparent',
+                color: '#2d6a4f',
                 border: '2px solid #2d6a4f',
                 borderRadius: '4px',
                 fontSize: '0.95rem',
@@ -272,7 +283,7 @@ export function LevelBrowsePage() {
             </button>
 
             <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', opacity: 0.45 }}>
-              {currentIndex + 1} of {words.length}
+              {currentIndex + 1} of {unsortedWords.length}
             </span>
 
             <button
@@ -317,7 +328,29 @@ export function LevelBrowsePage() {
           )}
         </div>
       ) : (
-        <p style={{ textAlign: 'center', opacity: 0.6 }}>No words found for HSK {levelNum}.</p>
+        <div style={{
+          textAlign: 'center',
+          padding: 'var(--space-2xl)',
+          background: 'var(--color-paper-dark)',
+          border: '1px solid var(--color-gold)',
+          borderRadius: '4px',
+          maxWidth: '500px',
+          margin: '0 auto',
+        }}>
+          <p style={{
+            fontFamily: 'var(--font-heading)',
+            fontSize: '1.2rem',
+            color: 'var(--color-ink)',
+            marginBottom: 'var(--space-sm)',
+          }}>
+            {words.length > 0 ? 'All words sorted' : `No words found for HSK ${levelNum}`}
+          </p>
+          {words.length > 0 && (
+            <p style={{ fontSize: '0.85rem', opacity: 0.65, fontFamily: 'var(--font-mono)' }}>
+              {known} known · {learn} still learning
+            </p>
+          )}
+        </div>
       )}
     </div>
   );

@@ -46,4 +46,16 @@ export class UserWordsController {
   ) {
     return this.userWordsService.getSession(user.id, parseInt(limit, 10));
   }
+
+  @Post('distractors')
+  getDistractors(
+    @CurrentUser() user: AuthUser,
+    @Body() body: { word_ids: string[]; count: number },
+  ) {
+    return this.userWordsService.getDistractors(
+      user.id,
+      body.word_ids,
+      body.count ?? 12,
+    );
+  }
 }

@@ -24,14 +24,17 @@ export function Flashcard({ card, showPinyin, onRevealed }: FlashcardProps) {
     }
   };
 
+  // Status badge for known/mastered words appearing in review
+  const isReview = card.status === 'known' || card.status === 'mastered';
+
   return (
     <div
       onClick={handleFlip}
       style={{
         width: '100%',
-        maxWidth: '480px',
+        maxWidth: '420px',
         aspectRatio: '3 / 4',
-        maxHeight: '70vh',
+        maxHeight: '65vh',
         perspective: '1000px',
         cursor: flipped ? 'default' : 'pointer',
         userSelect: 'none',
@@ -42,7 +45,7 @@ export function Flashcard({ card, showPinyin, onRevealed }: FlashcardProps) {
         height: '100%',
         position: 'relative',
         transformStyle: 'preserve-3d',
-        transition: 'transform 0.4s ease-in-out',
+        transition: 'transform 0.45s ease-in-out',
         transform: flipped ? 'rotateY(180deg)' : 'rotateY(0deg)',
       }}>
         {/* Front */}
@@ -59,23 +62,58 @@ export function Flashcard({ card, showPinyin, onRevealed }: FlashcardProps) {
           justifyContent: 'center',
           padding: 'var(--space-2xl)',
           gap: 'var(--space-md)',
+          boxShadow: '0 1px 3px rgba(26, 16, 8, 0.08)',
         }}>
+          {/* Review badge */}
+          {isReview && (
+            <span style={{
+              position: 'absolute',
+              top: 'var(--space-md)',
+              left: 'var(--space-md)',
+              fontFamily: 'var(--font-mono)',
+              fontSize: '0.7rem',
+              color: '#2d6a4f',
+              background: 'rgba(45, 106, 79, 0.1)',
+              padding: '2px 8px',
+              borderRadius: '4px',
+              letterSpacing: '0.05em',
+              textTransform: 'uppercase',
+            }}>
+              Review
+            </span>
+          )}
+
+          {/* HSK level indicator */}
+          <span style={{
+            position: 'absolute',
+            top: 'var(--space-md)',
+            right: 'var(--space-md)',
+            fontFamily: 'var(--font-mono)',
+            fontSize: '0.7rem',
+            color: 'var(--color-ink-black)',
+            opacity: 0.3,
+          }}>
+            HSK {card.words.hsk_level}
+          </span>
+
           {isHanziFirst ? (
             <>
               <span style={{
                 fontFamily: 'var(--font-hanzi)',
-                fontSize: 'clamp(5rem, 15vw, 10rem)',
+                fontSize: 'clamp(4.5rem, 14vw, 9rem)',
                 lineHeight: 1,
                 color: 'var(--color-ink-black)',
+                letterSpacing: '0.02em',
               }}>
                 {card.words.hanzi}
               </span>
               {showPinyin && (
                 <span style={{
                   fontFamily: 'var(--font-mono)',
-                  fontSize: '1.1rem',
+                  fontSize: '1rem',
                   color: 'var(--color-ink-black)',
-                  opacity: 0.6,
+                  opacity: 0.45,
+                  marginTop: 'var(--space-xs)',
                 }}>
                   {card.words.pinyin}
                 </span>
@@ -84,19 +122,35 @@ export function Flashcard({ card, showPinyin, onRevealed }: FlashcardProps) {
           ) : (
             <span style={{
               fontFamily: 'var(--font-body)',
-              fontSize: 'clamp(1.5rem, 5vw, 2.5rem)',
+              fontSize: 'clamp(1.4rem, 5vw, 2.2rem)',
               color: 'var(--color-ink-black)',
               textAlign: 'center',
+              lineHeight: 1.4,
             }}>
               {card.words.meaning}
             </span>
           )}
+
+          {/* Decorative seal mark */}
+          <div style={{
+            position: 'absolute',
+            bottom: 'var(--space-xl)',
+            width: '32px',
+            height: '32px',
+            borderRadius: '50%',
+            border: '1.5px solid var(--color-vermillion)',
+            opacity: 0.15,
+          }} />
+
           <span style={{
             position: 'absolute',
             bottom: 'var(--space-lg)',
-            fontSize: '0.8rem',
+            fontSize: '0.75rem',
+            fontFamily: 'var(--font-mono)',
             color: 'var(--color-ink-black)',
-            opacity: 0.35,
+            opacity: 0.25,
+            letterSpacing: '0.1em',
+            textTransform: 'uppercase',
           }}>
             Tap to reveal
           </span>
@@ -116,43 +170,57 @@ export function Flashcard({ card, showPinyin, onRevealed }: FlashcardProps) {
           alignItems: 'center',
           justifyContent: 'center',
           padding: 'var(--space-2xl)',
-          gap: 'var(--space-md)',
+          gap: 'var(--space-sm)',
+          boxShadow: '0 1px 3px rgba(26, 16, 8, 0.08)',
         }}>
           <span style={{
             fontFamily: 'var(--font-hanzi)',
-            fontSize: isHanziFirst ? 'clamp(2rem, 8vw, 4rem)' : 'clamp(5rem, 15vw, 10rem)',
+            fontSize: isHanziFirst ? 'clamp(2rem, 8vw, 3.5rem)' : 'clamp(4.5rem, 14vw, 9rem)',
             lineHeight: 1,
             color: 'var(--color-ink-black)',
           }}>
             {card.words.hanzi}
           </span>
+
+          {/* Divider */}
+          <div style={{
+            width: '40px',
+            height: '1px',
+            background: 'var(--color-gold)',
+            margin: 'var(--space-sm) 0',
+            opacity: 0.6,
+          }} />
+
           <span style={{
             fontFamily: 'var(--font-mono)',
-            fontSize: '1.1rem',
+            fontSize: '1rem',
             color: 'var(--color-ink-black)',
-            opacity: 0.6,
+            opacity: 0.5,
           }}>
             {card.words.pinyin}
           </span>
           <span style={{
             fontFamily: 'var(--font-body)',
-            fontSize: isHanziFirst ? 'clamp(1.5rem, 5vw, 2.5rem)' : 'clamp(1.2rem, 4vw, 1.8rem)',
+            fontSize: isHanziFirst ? 'clamp(1.3rem, 4vw, 2rem)' : 'clamp(1.1rem, 3.5vw, 1.6rem)',
             color: 'var(--color-ink-black)',
             textAlign: 'center',
-            marginTop: 'var(--space-sm)',
+            marginTop: 'var(--space-xs)',
+            lineHeight: 1.4,
           }}>
             {card.words.meaning}
           </span>
+
           {isSupported && (
             <button
               onClick={(e) => { e.stopPropagation(); speak(card.words.hanzi); }}
               style={{
                 background: 'none',
-                color: 'var(--color-ink-black)',
+                color: 'var(--color-crimson)',
                 padding: '8px',
                 display: 'flex',
-                opacity: 0.6,
+                opacity: 0.7,
                 marginTop: 'var(--space-sm)',
+                transition: 'opacity 0.2s',
               }}
               title="Pronounce"
             >
