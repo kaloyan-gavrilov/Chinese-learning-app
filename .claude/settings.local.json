@@ -1,0 +1,11 @@
+{
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "supabase"
+  ],
+  "permissions": {
+    "allow": [
+      "Bash(find /Users/kaloyan/Documents/Chinese/Chinese-learning-app -name \"*.json\" -o -name \"*.csv\" -o -name \"*.ts\" -o -name \"*.tsx\" -o -name \"*.js\" 2>/dev/null | grep -v node_modules | grep -v \".git\")"
+    ]
+  }
+}
